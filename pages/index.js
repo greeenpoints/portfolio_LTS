@@ -50,11 +50,11 @@ export default function Home() {
             </p>
             <WorkExperience
               title="Des.Bin"
-              date="2022 - Present"
+              date="2022 - 2024"
               description=""
             >
-              Building Anime.com and interactive experiences for the Azuki IP.
-              Actively building out the design team.
+              Design consulting for Art and Exhibition Design with
+              key focus on User Experience 
             </WorkExperience>
             <WorkExperience title="Independent Practice">
               Design consulting for Art and Exhibition Design with
@@ -66,8 +66,8 @@ export default function Home() {
               .
             </WorkExperience>
             <WorkExperience title="Anagram" date="2020">
-              First full-time design hire. 0→1 design for Email, Editor, Drive,
-              Calendar. Scaled Skiff Mail to 1M+ users. Recently{' '}
+              {/* First full-time design hire. 0→1 design for Email, Editor, Drive,
+              Calendar. Scaled Skiff Mail to 1M+ users. Recently */} {' '}
               <TextLink link="https://anagramarchitects.com/">
                 Anagram
               </TextLink>
