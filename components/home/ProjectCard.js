@@ -10,7 +10,7 @@ export default function ProjectCard({ isVideo = false, ...props }) {
         //determine if project is linked
         props.link != undefined ? 'cursor-pointer' : 'pointer-events-none'
       }
-      relative grid w-full opacity-100 inline-block select-none group`}
+      relative w-full opacity-100 inline-block select-none group`}
       passHref
       variants={props.animation}
       href={`${props.link}`}
