@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Media from '../Media';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function ProjectCard({ isVideo = false, ...props }) {
   return (
@@ -32,7 +33,7 @@ export default function ProjectCard({ isVideo = false, ...props }) {
               Acquired by Notion
             </p>
 
-            <img
+            <Image
               src="/notion-logo.svg"
               alt="Notion Logo"
               className="w-[14px] h-[14px]"
