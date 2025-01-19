@@ -41,16 +41,16 @@ export default function ProjectMedia(props) {
     setLoadingPhrase(loadingCopy.combineCopy());
   }, []);
 
-  useEffect(() => {
-    // determineBackground();
-    if (Array.isArray(bgColors[path])) {
-      props.dark
-        ? setBackground(bgColors[path][1])
-        : setBackground(bgColors[path][0]);
-    } else {
-      setBackground(bgColors[path]);
-    }
-  }, [path]);
+  // useEffect(() => {
+  //   // determineBackground();
+  //   if (Array.isArray(bgColors[path])) {
+  //     props.dark
+  //       ? setBackground(bgColors[path][1])
+  //       : setBackground(bgColors[path][0]);
+  //   } else {
+  //     setBackground(bgColors[path]);
+  //   }
+  // }, [path]);
 
   return (
     <>
