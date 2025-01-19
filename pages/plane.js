@@ -26,7 +26,7 @@ export default function Plane() {
         <ProjectHero content="/project-covers/plane.jpg" />
         <ProjectTitle role="Wanna do research in this">Data is the new ART</ProjectTitle>
         <ProjectBody col={2}>
-        "NewsScape: The World Through Art" is an upcoming AI-driven initiative that 
+        &ldquo;NewsScape: The World Through Art&ldquo; is an upcoming AI-driven initiative that 
         transforms hourly global news into dynamic art pieces. By using colors, textures, 
         and patterns to represent countries, topics, and tones, it aims to reveal hidden 
         trends in global narratives while creating a visually engaging and evolving art collection.

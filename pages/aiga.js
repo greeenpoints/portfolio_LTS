@@ -57,7 +57,7 @@ export default function Aiga() {
         student-friendly outdoor environment that blends greenery with functional 
         spaces. It incorporates innovative landscaping techniques, interactive zones, 
         and eco-friendly features to foster learning, recreation, and community engagement, 
-        enhancing the aesthetic appeal and utility of the institution's surroundings.
+        enhancing the aesthetic appeal and utility of the institution&apos;s surroundings.
         </ProjectBody>
         <ProjectDetails
           role={['Lead Designer']}
