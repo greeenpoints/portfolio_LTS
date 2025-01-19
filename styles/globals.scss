@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  *::selection {
+    @apply text-yellow-300;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+    @apply leading-[100%] tracking-[0.04em];
+  }
+
+  .h1 {
+    @apply text-[28px] lg:text-[32px] font-display font-semibold uppercase;
+  }
+
+  .h2 {
+    @apply text-[20px] lg:text-[24px] font-display font-medium  uppercase;
+  }
+
+  .h3 {
+    @apply text-[16px] lg:text-[20px] font-display font-medium uppercase;
+  }
+
+  .h4 {
+    @apply text-[14px] lg:text-[16px] font-display normal-case;
+  }
+
+  .body {
+    @apply text-[14px] lg:text-[15px] leading-[130%] font-medium font-sans normal-case;
+  }
+
+  .caption {
+    @apply font-mono text-[11.5px] tracking-[.08em] leading-[160%] uppercase;
+  }
+
+  .azuki-red {
+    @apply bg-[#B14044];
+  }
+
+  .text-padding {
+    @apply px-4 md:px-8;
+  }
+
+  .grid-layout {
+    @apply relative z-10 col-start-1 col-end-13 grid grid-cols-12 grid-gap;
+  }
+
+  .grid-gap {
+    @apply gap-x-3 gap-y-3;
+  }
+
+  .main-bg {
+    @apply bg-[#111111];
+  }
+}
+
+@font-face {
+  font-family: 'OffBit';
+  src: url('/fonts/OffBitTrial-101Bold.otf') format('truetype');
+  font-weight: 400;
+}
+
+// @media (hover: hover) {
+//   .persistent-game-border {
+//     z-index: 20 !important;
+//     animation: color-change 2s ease-in-out infinite;
+//     box-shadow: 0 0 0 2px black, 0 0 0 6px blue;
+//   }
+
+//   .game-border {
+//     position: relative;
+//     z-index: 1;
+//     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0), 0 0 0 5px rgb(0, 179, 255, 0);
+//   }
+
+//   .game-border:hover {
+//     z-index: 20 !important;
+//     animation: color-change 2s ease-in-out infinite;
+//     box-shadow: 0 0 0 2px black, 0 0 0 5px blue;
+//   }
+
+//   .game-border:active {
+//     box-shadow: 0 0 0 2px black, 0 0 0 4px rgb(76, 197, 76) !important;
+//     animation: none;
+//   }
+// }
+
+// @keyframes color-change {
+//   0% {
+//     box-shadow: 0 0 0 2px black, 0 0 0 5px rgb(0, 179, 255, 0.8);
+//   }
+//   33% {
+//     box-shadow: 0 0 0 2px black, 0 0 0 5px rgb(255, 225, 0, 0.8);
+//   }
+
+//   66% {
+//     box-shadow: 0 0 0 2px black, 0 0 0 5px rgb(250, 43, 43, 0.8);
+//   }
+
+//   100% {
+//     box-shadow: 0 0 0 2px black, 0 0 0 5px rgb(0, 179, 255, 0.8);
+//   }
+// }
+
+.dotted-underline {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 50%
+  );
+  background-position: 0 1.44em;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+}
+
+.dotted-underline:hover {
+  background-image: linear-gradient(to right, #e9dd34 50%, transparent 50%);
+}
+
+.dot-grid {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  background-position: -19px -19px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 60.8%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.thumbnail-radius {
+  border-radius: 48px;
+}
+
+.wrapper {
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #111111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* border-bottom: 1px solid rgba(255, 255, 255.1); */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.DialogOverlay {
+  background: rgba(0 0 0 / 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+.DialogContent {
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+}
