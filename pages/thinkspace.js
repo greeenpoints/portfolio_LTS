@@ -53,22 +53,27 @@ export default function Home() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero isVideo={true} content="/project-covers/thinkspace.mp4" />
-        <ProjectTitle role="Assistive AI Agents">Thinkspace</ProjectTitle>
+        <ProjectTitle role="Architectural Thesis Project">City of 2140 : New York</ProjectTitle>
         <ProjectBody col={2}>
-          Rich, engaging conversation is a hallmark of meaningful human-to-human
-          interaction. However, factors such as relational closeness, social
-          formalities, and insecurities often hinder unfamiliar individuals from
-          going beyond the surface-level conversation. Thinkspace is a
-          speculative concept that aims to reinvision the role of conversational
-          agents in discussion-based contexts.
+        Inspired by Kim Stanley Robinson’s New York 2140, this project reimagines 
+        New York City as a resilient, adaptive urban ecosystem driven by data. Using 
+        parametric design and modular construction, buildings and infrastructure respond 
+        dynamically to real-time environmental, social, and economic factors. Floating 
+        structures, elevated walkways, and adaptive systems address rising sea levels while 
+        fostering community and sustainability. Data integration enables predictive modeling 
+        for resource management, disaster resilience, and urban growth. The project promotes 
+        a circular economy through sustainable materials and modularity. New York becomes a 
+        living organism, evolving alongside its inhabitants and their changing needs while 
+        tackling future challenges.
         </ProjectBody>
         <ProjectDetails
-          role={['Designer']}
+          role={['Academic Project']}
           replaceCollab="advisors"
-          collaborators={['Jonathan Chapman', 'Steve Stadelmeier']}
-          duration="7 weeks"
-          tools={['Javascript']}
+          collaborators={['Kush Patel', 'Soumini Raja']}
+          duration="4 months"
+          tools={['Python', 'Rhino 3D', 'Grasshopper', 'V-Ray', 'Adobe Suite']}
         />
+        {/*
         <LinkCard
           col={1}
           link="https://josephz.notion.site/Thinkspace-24f3dc1c62904b0da412b0a4230cc92d"
@@ -76,6 +81,7 @@ export default function Home() {
           View complete documentation
         </LinkCard>
         <ExternalVideo url="https://player.vimeo.com/video/704621543?h=5407db28dd&title=0&byline=0&portrait=0"></ExternalVideo>
+        */}
       </GridContainer>
     </motion.main>
   );

@@ -92,13 +92,13 @@ export default function Home() {
               description="Nudes Studio"
               link="/skiff"
               content={Skiff}
-            />
+            /> {/*
             <ProjectCard
               title="Brain Technologies"
               description="Conversational AI"
               link="/brain"
               content={Brain}
-            />
+            /> */}
             {/*
              <ProjectCard
               title="Multimodal Search"
@@ -123,7 +123,7 @@ export default function Home() {
               description="Wanna do research in this"
               locked
               content={Plane}
-            />
+            /> 
             <ProjectCard
               title="Neydhal"
               description="Exhibition along with KMB 2023"
@@ -139,17 +139,19 @@ export default function Home() {
               link="/azuki/#collector"
               content={CollectorStatus}
             /> */}
+            {/*
             <ProjectCard
               title="LIGHT ENGINE"
               description="Industrial Design"
               link="/lightengines"
               content={Experiments}
             />
+            */}
           </div>
 
           {/* COLUMN 3 */}
           <div className={`flex flex-col ${gapValue}`}>
-            
+            {/*
             <ProjectCard
               title="Pixel Push"
               description="Multiplayer Art"
@@ -164,19 +166,22 @@ export default function Home() {
               link="/azuki"
               content={Azuki}
             />
+            */}
             <ProjectCard
-              title="Thinkspace"
-              description="Assistive AI Agents"
+              title="City of 2140 : New York"
+              description="Architectural Thesis Project"
               link="/thinkspace"
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />
+            {/*
             <ProjectCard
               title="Metalink Labs"
               description="Design systems"
               link="/metalink"
               content={Metalink}
             ></ProjectCard>
+            */}
           </div>
         </div>
       </GridContainer>

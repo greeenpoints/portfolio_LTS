@@ -49,27 +49,24 @@ export default function Aiga() {
     <main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero isVideo={false} content="/project-covers/aiga.jpg" />
-        <ProjectTitle role="Interactive Data Visualization">
-          AIGA Hue
+        <ProjectTitle role="Architectural Modularity">
+          Velammal Project
         </ProjectTitle>
         <ProjectBody col={2}>
-          AIGA Hue is a desktop web experience that visualizes career data from
-          the 2019 AIGA Design Census in a playful and informative manner. The
-          recent over-saturation of interest in certain design fields has
-          resulted in skewed perceptions of neighboring creative industries.
-          This project strives to break those stereotypes by providing a
-          holistic understanding of the creative industry and all the viable
-          career options that exist.
+        The Velammal Landscape Project focuses on creating a sustainable, 
+        student-friendly outdoor environment that blends greenery with functional 
+        spaces. It incorporates innovative landscaping techniques, interactive zones, 
+        and eco-friendly features to foster learning, recreation, and community engagement, 
+        enhancing the aesthetic appeal and utility of the institution's surroundings.
         </ProjectBody>
         <ProjectDetails
-          role={['Frontend Developer', 'Visual Designer']}
+          role={['Lead Designer']}
           collaborators={[
-            'Kyuha Shim (advisor)',
-            'Langston Wells',
-            'Stefanie Suk',
+            'Joel Joshy',
+            'Ashish N Ramesh',
           ]}
-          duration="2 months"
-          tools={['HTML/CSS/JS', 'Figma', 'Cinema4D']}
+          duration="3 months"
+          tools={['Rhino 3D', 'Grasshopper', 'V-Ray', 'Adobe Suite']}
         />
         {/*
         <LinkCard col={1} link="https://josephz-me.github.io/aiga-hue/">
