@@ -1,5 +1,5 @@
-import React from 'react';
-import TextLink from '../components/TextLink';
+// import React from 'react';
+// import TextLink from '../components/TextLink';
 
 // export async function getStaticProps() {
 //   const notion = new Client({ auth: process.env.NOTION_API_KEY });
@@ -62,67 +62,67 @@ import TextLink from '../components/TextLink';
   // );
 
 
-const TitleCard = (props) => {
-  return (
-    <div className="col-span-full md:col-end-4 md:sticky md:top-[5.3em] text-zinc-100">
-      <h1 className="mb-1 h1">{props.children}</h1>
-      <p className="caption text-zinc-500">{props.role}</p>
-      <p className={`mb-6 text-white body z-1000 grid-gap md:mt-0`}>
-        One of my biggest goals is to read more books. This list is always
-        evolving as I find new stuff to read. I use Notion to keep track of
-        everything, and the list here updates automatically through the{' '}
-        <TextLink url="https://developers.notion.com/">Notion API</TextLink>. If
-        you ever have suggestions, send me a message!
-      </p>
+// const TitleCard = (props) => {
+//   return (
+//     <div className="col-span-full md:col-end-4 md:sticky md:top-[5.3em] text-zinc-100">
+//       <h1 className="mb-1 h1">{props.children}</h1>
+//       <p className="caption text-zinc-500">{props.role}</p>
+//       <p className={`mb-6 text-white body z-1000 grid-gap md:mt-0`}>
+//         One of my biggest goals is to read more books. This list is always
+//         evolving as I find new stuff to read. I use Notion to keep track of
+//         everything, and the list here updates automatically through the{' '}
+//         <TextLink url="https://developers.notion.com/">Notion API</TextLink>. If
+//         you ever have suggestions, send me a message!
+//       </p>
 
-      {Object.entries(props.yearCounter).map(([year, count]) => (
-        <div
-          key={year}
-          className="flex flex-auto gap-4 py-2 text-white border-t border-solid opacity-60 border-white/10 caption"
-        >
-          <p>
-            {year} - {count} books{' '}
-          </p>
-        </div>
-      ))}
-    </div>
-  );
-};
+//       {Object.entries(props.yearCounter).map(([year, count]) => (
+//         <div
+//           key={year}
+//           className="flex flex-auto gap-4 py-2 text-white border-t border-solid opacity-60 border-white/10 caption"
+//         >
+//           <p>
+//             {year} - {count} books{' '}
+//           </p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
-const BookCard = (props) => {
-  return (
-    <a
-      href={props.url}
-      rel="noreferrer"
-      target="_blank"
-      className="flex flex-col col-span-6 gap-3 text-white group md:col-span-4 lg:col-span-3"
-    >
-      <div className="hover:bg-white/[.15] group flex items-center justify-center bg-white/10 h-[68vw] md:h-[28vw] lg:h-[22vw] border-white/10 p-6 md:p-8">
-        <img
-          className="overflow-hidden w-full h-auto rounded-sm shadow-md brightness-105 transition ease-out md:group-hover:brightness-110 md:group-active:scale-[.98] md:group-active:translate-y-1 md:group-hover:-translate-y-1"
-          src={props.image}
-        />
-      </div>
+// const BookCard = (props) => {
+//   return (
+//     <a
+//       href={props.url}
+//       rel="noreferrer"
+//       target="_blank"
+//       className="flex flex-col col-span-6 gap-3 text-white group md:col-span-4 lg:col-span-3"
+//     >
+//       <div className="hover:bg-white/[.15] group flex items-center justify-center bg-white/10 h-[68vw] md:h-[28vw] lg:h-[22vw] border-white/10 p-6 md:p-8">
+//         <img
+//           className="overflow-hidden w-full h-auto rounded-sm shadow-md brightness-105 transition ease-out md:group-hover:brightness-110 md:group-active:scale-[.98] md:group-active:translate-y-1 md:group-hover:-translate-y-1"
+//           src={props.image}
+//         />
+//       </div>
 
-      <div className="">
-        <h1
-          className={`text-white body`}
-          style={{
-            display: '-webkit-box',
-            WebkitBoxOrient: 'vertical',
-            WebkitLineClamp: 2,
-            overflow: 'hidden',
-          }}
-        >
-          {props.title}
-        </h1>
-        <p className="body text-zinc-500">{props.author}</p>
-        {props.locked && (
-          <p className="absolute top-4 right-4 z-10 px-2 py-1 bg-gray-800 rounded-md shadow-xl text-neutral-100">
-            LOCKED
-          </p>
-        )}
-      </div>
-    </a>
-  );
-};
+//       <div className="">
+//         <h1
+//           className={`text-white body`}
+//           style={{
+//             display: '-webkit-box',
+//             WebkitBoxOrient: 'vertical',
+//             WebkitLineClamp: 2,
+//             overflow: 'hidden',
+//           }}
+//         >
+//           {props.title}
+//         </h1>
+//         <p className="body text-zinc-500">{props.author}</p>
+//         {props.locked && (
+//           <p className="absolute top-4 right-4 z-10 px-2 py-1 bg-gray-800 rounded-md shadow-xl text-neutral-100">
+//             LOCKED
+//           </p>
+//         )}
+//       </div>
+//     </a>
+//   );
+// };
