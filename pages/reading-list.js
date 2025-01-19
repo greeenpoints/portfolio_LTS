@@ -5,39 +5,39 @@ import Image from 'next/image';
 import Media from '../components/Media';
 import ProjectMedia from '../components/projects/ProjectMedia';
 import * as loadingCopy from '../components/loadingCopy';
-import { Client } from '@notionhq/client';
+// import { Client } from '@notionhq/client';
 import Preloader from '../components/Preloader';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
 const gapValue = 'gap-6';
 
-export async function getStaticProps() {
-  const notion = new Client({ auth: process.env.NOTION_API_KEY });
-  const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
-  });
+// export async function getStaticProps() {
+//   const notion = new Client({ auth: process.env.NOTION_API_KEY });
+//   const response = await notion.databases.query({
+//     database_id: process.env.NOTION_DATABASE_ID,
+//   });
 
-  return { props: { notionData: response.results }, revalidate: 1 };
-}
+//   return { props: { notionData: response.results }, revalidate: 1 };
+// }
 
-export default function ReadingList(props) {
-  const [yearCounter, setYearCounter] = useState({});
-  const books = props.notionData;
+// export default function ReadingList(props) {
+//   const [yearCounter, setYearCounter] = useState({});
+//   const books = props.notionData;
 
-  useEffect(() => {
-    // Function to count occurrences of years
-    const countYears = () => {
-      const counts = {};
-      books.forEach((book) => {
-        const year = book.properties.year.select.name;
-        counts[year] = (counts[year] || 0) + 1;
-      });
-      return counts;
-    };
+//   useEffect(() => {
+//     // Function to count occurrences of years
+//     const countYears = () => {
+//       const counts = {};
+//       books.forEach((book) => {
+//         const year = book.properties.year.select.name;
+//         counts[year] = (counts[year] || 0) + 1;
+//       });
+//       return counts;
+//     };
 
-    // Update state with the counts
-    setYearCounter(countYears());
-  }, []);
+//     // Update state with the counts
+//     setYearCounter(countYears());
+//   }, []);
 
   return (
     <main className="pt-8">
@@ -70,7 +70,7 @@ export default function ReadingList(props) {
       </GridContainer>
     </main>
   );
-}
+
 
 const TitleCard = (props) => {
   return (

@@ -47,9 +47,9 @@ export default function Skiff() {
           develop a holistic understanding of the product ecosystem, all while
           still being able to contribute at the most granular level. As of
           February 2024,{' '}
-          <TextLink link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family">
+          {/* <TextLink link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family">
             Skiff has been acquired by Notion
-          </TextLink>
+          </TextLink> */}
           .
         </ProjectBody>
         <ProjectDetails
@@ -63,12 +63,12 @@ export default function Skiff() {
           duration="2022 - 2023"
           tools={['Figma', 'React']}
         />
-        <LinkCard
+        {/* <LinkCard
           col={1}
           link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family"
         >
           Notion acquires Skiff
-        </LinkCard>
+        </LinkCard> */}
         <LinkCard col={2} link="https://twitter.com/skiffprivacy">
           {`Twitter`}
         </LinkCard>

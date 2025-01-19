@@ -74,9 +74,9 @@ export default function Aiga() {
         <LinkCard col={1} link="https://josephz-me.github.io/aiga-hue/">
           View live website
         </LinkCard>
-        <LinkCard link="https://josephz.notion.site/AIGA-Hue-38cd5f40c38c464ab1c5885468a1a3de">
+        {/* <LinkCard link="https://josephz.notion.site/AIGA-Hue-38cd5f40c38c464ab1c5885468a1a3de">
           View complete documentation
-        </LinkCard>
+        </LinkCard> */}
         <Spacer></Spacer>
         <ExternalVideo url="https://player.vimeo.com/video/529104061?h=d6d37cfb1c&title=0&byline=0&portrait=0"></ExternalVideo>
         <ProjectBody caption={true}>

@@ -69,12 +69,12 @@ export default function Home() {
           duration="7 weeks"
           tools={['Javascript']}
         />
-        <LinkCard
+        {/* <LinkCard
           col={1}
           link="https://josephz.notion.site/Thinkspace-24f3dc1c62904b0da412b0a4230cc92d"
         >
           View complete documentation
-        </LinkCard>
+        </LinkCard> */}
         <ExternalVideo url="https://player.vimeo.com/video/704621543?h=5407db28dd&title=0&byline=0&portrait=0"></ExternalVideo>
       </GridContainer>
     </motion.main>
