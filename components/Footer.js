@@ -8,7 +8,7 @@ const BREAKPOINT = 'col-start-1 col-end-13';
 export default function Footer() {
   const pageName = useRouter().asPath;
   const [aboutText, setAboutText] = useState(
-    `▞▚▞▚▞▚▞_Copyright_2024_▞▚▞▚▞▚▞_Next.JS_Vercel_▞▚▞▚▞▚▞_INPUT MONO_▞▚▞▚▞▚▞_OFFBIT TYPE_`
+    `▞▚▞▚▞▚▞_Next.JS_Vercel_▞▚▞▚▞▚▞_INPUT MONO_▞▚▞▚▞▚▞_OFFBIT TYPE_`
   );
 
   const [updatedTime, setUpdatedTime] = useState('...');
@@ -31,7 +31,7 @@ export default function Footer() {
     return () => clearInterval(interval);
   }, [aboutText]);
 
-  return (
+  return (  
     <footer
       className={`flex flex-col items-center body bg-[#1C1C1C] dot-grid z-[1] w-full sticky bottom-0 text-zinc-100`}
     >
@@ -39,7 +39,7 @@ export default function Footer() {
         <div
           className={`flex-col space-y-2 ${BREAKPOINT} caption md:col-start-1 md:col-end-6`}
         >
-          <span className="flex flex-row space-x-2 align-middle">
+          {/*<span className="flex flex-row space-x-2 align-middle">
             <p className="self-center w-min px-2 pt-1 pb-[2px] mono lowercase text-yellow-300 border-yellow-300 border border-solid rounded-full">
               v4.3.0
             </p>
@@ -49,24 +49,24 @@ export default function Footer() {
                 updatedTime.indexOf('T')
               )}`}{' '}
             </p>
-          </span>
+          </span>*/}
         </div>
 
         <span
           className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-7 md:col-end-9`}
         >
           <p>
-            <TextLink super={1} link="https://www.linkedin.com/in/josephzme/">
+            <TextLink super={1} link="https://www.linkedin.com/in/abhibny/">
               Linkedin
             </TextLink>
           </p>
           <p>
-            <TextLink super={2} link="https://www.instagram.com/josephhhz/">
+            <TextLink super={2} link="https://www.instagram.com/greeenpoints/">
               Instagram
             </TextLink>
           </p>
           <p>
-            <TextLink super={3} link="https://twitter.com/0xTraderJo">
+            <TextLink super={3} link="https://x.com/shawarmawomayo">
               Twitter
             </TextLink>
           </p>
@@ -81,8 +81,8 @@ export default function Footer() {
           <span>
             <TextLink
               super={5}
-              link="mailto:jxsephz@gmail.com"
-            >{`jxsephz@gmail.com`}</TextLink>
+              link="mailto:abhishekbenny98@gmail.com"
+            >{`abhishekbenny98@gmail.com`}</TextLink>
           </span>
         </div>
       </GridContainer>

@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
@@ -12,7 +12,8 @@ import Spacer from '../components/projects/Spacer';
 import Divider from '../components/projects/Divider';
 
 // images
-import LoreMain from '../public/work/azuki/lore-main.jpg';
+
+import LoreMain from '../public/work/azuki/WhatsApp Image 2024-10-31 at 08.09.38_96517cd8.jpg';
 import LoreOrigin from '../public/work/azuki/lore-origin.jpg';
 import LoreBeanz from '../public/work/azuki/lore-beanz.jpg';
 import LoreChapterOne from '../public/work/azuki/lore-chapter-one.jpg';
@@ -26,6 +27,7 @@ import auctionK112 from '../public/work/azuki/auction-k11-2.jpeg';
 import ambushLanding from '../public/work/azuki/ambush-landing.jpg';
 import equipBeanz from '../public/work/azuki/equip-beanz.jpg';
 import equipExamples from '../public/work/azuki/equip-examples.png';
+import rabbitTicket from '../public/work/azuki/rabbit-ticket.jpg';
 import s2_mint from '../public/work/azuki/s2-mint.jpg';
 import s2_mint_closeup from '../public/work/azuki/s2-mint-closeup.jpg';
 import s2_reveal from '../public/work/azuki/s2-reveal.jpg';
@@ -50,7 +52,7 @@ export default function Brain() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero content="/project-covers/azuki-2.jpg" />
-        <ProjectTitle role="Consumer Product">Azuki</ProjectTitle>
+        <ProjectTitle role="product & brand">Azuki</ProjectTitle>
         <ProjectBody col={2}>
           Azuki is a technology company pioneering on-chain integration with
           with media, physical collectibles, and gaming. Since launch, they have

@@ -1,6 +1,9 @@
-
+import Head from 'next/head';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { motion} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import TextLink from '../components/TextLink';
+import Link from 'next/link';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';

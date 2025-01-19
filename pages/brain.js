@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
@@ -52,8 +52,8 @@ export default function Brain() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero content="/project-covers/natural.jpg" />
-        <ProjectTitle role="multimodal interaction">
-          Brain Technologies
+        <ProjectTitle role="Architectural Thesis Project">
+          City of 2140 : New York
         </ProjectTitle>
         <ProjectBody col={2}>
           For 2 years, I prototyped new ways to engage with computer interfaces,
@@ -84,6 +84,16 @@ export default function Brain() {
           Natural AI App
         </LinkCard>
         <Spacer />
+        <LinkCard col={1} link="https://natural.ai/#/">
+          Main Website
+        </LinkCard>
+        <LinkCard
+          col={2}
+          link="https://apps.apple.com/us/app/id1521375720/?role=f8a07a03-a0a9-4a5e-b59e-b48cb3ab1478"
+        >
+          Natural AI App
+        </LinkCard>
+        
         <MobileMockupVideo src="work/brain/followup-queries.mp4">
           Multimodal search with the ability to give follow-up queries
         </MobileMockupVideo>

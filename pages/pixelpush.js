@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import {
   motion,
+  AnimatePresence,
+  SwitchLayoutGroupContext,
 } from 'framer-motion';
+import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectMedia from '../components/projects/ProjectMedia';
 import ProjectTitle from '../components/projects/ProjectTitle';
 import ExternalVideo from '../components/projects/ExternalVideo';
+import LinkCard from '../components/projects/LinkCard';
 import ProjectDetails from '../components/projects/ProjectDetails';
 import GalleryArt from '../public/work/pixelpush/gallery-art.jpg';
 import Spacer from '../components/projects/Spacer';
@@ -78,12 +82,12 @@ export default function PixelPush() {
             'Figma',
           ]}
         />
-        {/* <LinkCard
+        <LinkCard
           col={1}
           link="https://josephz.notion.site/Pixel-Push-48910c3a971747b0b6fc3f31572b9984"
         >
           View complete documentation
-        </LinkCard> */}
+        </LinkCard>
         <Spacer></Spacer>
         <ExternalVideo url="https://player.vimeo.com/video/488803937?h=99634d02a7&title=0&byline=0&portrait=0"></ExternalVideo>
         <ProjectMedia src={GalleryArt} isImage={true}></ProjectMedia>

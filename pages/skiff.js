@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion} from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
@@ -12,23 +12,14 @@ import LinkCard from '../components/projects/LinkCard';
 
 // images
 import AppSwitcher from '../public/work/skiff/app-switcher.jpg';
-import LocalSharing from '../public/work/skiff/local-sharing.jpg';
-import CustomDomains from '../public/work/skiff/custom-domains.jpg';
 import Mail from '../public/work/skiff/mail.jpg';
-import IconPicker from '../public/work/skiff/icon-picker.jpg';
-import FormatBar from '../public/work/skiff/format-bar.jpg';
 import Compose from '../public/work/skiff/compose-modal.jpg';
 import Icons from '../public/work/skiff/icons.png';
 import MarketingCards from '../public/work/skiff/marketing-cards.png';
 import MarketingCards2 from '../public/work/skiff/marketing-cards-2.jpg';
 import MarketingLanding from '../public/work/skiff/marketing-landing.jpg';
 import AppLogos from '../public/work/skiff/app-logos.jpg';
-import SharingModals from '../public/work/skiff/sharing-modal.png';
-import DragDrop from '../public/work/skiff/drag-drop.jpg';
-import Tables from '../public/work/skiff/tables.jpg';
-import Comments from '../public/work/skiff/comments.jpg';
 import Onboarding from '../public/work/skiff/onboarding.jpg';
-import OnboardingChecklist from '../public/work/skiff/onboarding-checklist.jpg';
 import MobileMail1 from '../public/work/skiff/mobile-mail-1.png';
 import MobileMail2 from '../public/work/skiff/mobile-mail-2.png';
 
@@ -37,43 +28,46 @@ export default function Skiff() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero isVideo={false} content="/project-covers/skiff.jpg" />
-        <ProjectTitle role="Productivity">Skiff</ProjectTitle>
+        <ProjectTitle role="Nudes Studio">BookWorm Pavilion</ProjectTitle>
         <ProjectBody col={2}>
-          I led design at Skiff, a productivity company building E2EE
-          collaboration tools. As the first full-time design hire, I helped
-          scale Skiff from a beta product to over +1,000,000 users. During my
-          time with the team, I focused mostly on Skiff Pages, Drive, and Mail.
-          A blessing in disguise, managing such a large scope has helped me
-          develop a holistic understanding of the product ecosystem, all while
-          still being able to contribute at the most granular level. As of
-          February 2024,{' '}
-          {/* <TextLink link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family">
-            Skiff has been acquired by Notion
-          </TextLink> */}
+          The BookWorm Pavilion project, under Nudes Studio, Mumbai led by {' '}
+          <TextLink link="https://www.instagram.com/nurukarim/?hl=en">
+            Ar. Nuru Karim 
+          </TextLink>
+          {' '}is a library of two simple, modular structures based on wooden ladders that 
+          stretch outward to create undulating forms at either side of a central pathway.
+          I worked on setting up the pavilion which was built from around 3,600 wooden components.
+          These ladders house both shelf and seating areas for storytelling sessions, 
+          offering unique views out across the{' '}
+          <TextLink link="https://csmvs.in/">
+            CSMVS museum
+          </TextLink>{' '}
+          gardens while providing space 
+          for approximately 12,000 books.{' '}
           .
         </ProjectBody>
         <ProjectDetails
-          role={['Product & Brand Designer']}
+          role={['Design Intern']}
           collaborators={[
-            'Jason Ginsberg',
-            'Sunny Li',
-            'Natalie Almosa',
-            'Oscar Dumlao',
+            'Nuru Karim',
+            'Ashish N Ramesh',
+            'Hari Sankar',
+            'Aman Kachchhi',
           ]}
-          duration="2022 - 2023"
-          tools={['Figma', 'React']}
+          duration="2019"
+          tools={['Grasshopper', 'Rhino 3D']}
         />
-        {/* <LinkCard
+        <LinkCard
           col={1}
-          link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family"
+          link="https://www.dezeen.com/2019/12/26/wooden-book-worm-nudes-pavilion-architecture-mumbai/"
         >
-          Notion acquires Skiff
-        </LinkCard> */}
-        <LinkCard col={2} link="https://twitter.com/skiffprivacy">
-          {`Twitter`}
+          BookWorm on Dezeen
+        </LinkCard>
+        <LinkCard col={2} link="https://www.archdaily.com/965307/bookworm-pavilion-nudes">
+          {`BookWorm on ArchDaily`}
         </LinkCard>
         <Spacer />
-        <ProjectBody title="Visual Language">
+        <ProjectBody title="Design Process">
           I helped transform Skiff&apos;s visual design language. This involved
           working with{' '}
           <TextLink link="https://www.pentagram.com/work/skiff">
@@ -83,7 +77,8 @@ export default function Skiff() {
           complete iconography set, and visual graphic style.
         </ProjectBody>
         <ProjectMedia src={AppLogos}>
-          Four skeuomorphic icons, one for each product [Co-designed with Jason]
+        The “BookWorm” pavilion aims to foster a sense of learning through 
+        the creation of an interactive learning space.
         </ProjectMedia>
         <ProjectMedia src={MarketingLanding}>
           Led design for the Skiff marketing site relaunch, a 2.5 month project.
@@ -104,28 +99,13 @@ export default function Skiff() {
         <ProjectMedia pAll src={Onboarding} />
 
         {/* MAIl */}
-        <ProjectBody id="mail" title="Mail">
-          Search, sorting automation, compose editor, web3 wallet email, etc.
+        <ProjectBody id="mail" title="Output">
+        The pavilion was fabricated off-shore and deployed on-site within a week.
         </ProjectBody>
         <ProjectMedia pAll src={Mail} />
         <ProjectMedia pr pb pt src={Compose} />
         <ProjectMedia noShadow pAll src={MobileMail1} />
-        <ProjectMedia noShadow pAll src={MobileMail2} />
-        <ProjectMedia pt pr pb src={CustomDomains}></ProjectMedia>
-        <ProjectMedia pb pr src={OnboardingChecklist} />
-
-        {/* PAGES */}
-        <ProjectBody id="editor" title="Pages">
-          Text styles, tables, navigation sidebar, format bar, sharing features,
-          enterprise controls, public documents, etc.
-        </ProjectBody>
-        <ProjectMedia pt pr pb src={Comments}></ProjectMedia>
-        <ProjectMedia pt pr src={LocalSharing}></ProjectMedia>
-        <ProjectMedia src={SharingModals} />
-        <ProjectMedia src={IconPicker}></ProjectMedia>
-        <ProjectMedia src={DragDrop}></ProjectMedia>
-        <ProjectMedia src={FormatBar}></ProjectMedia>
-        <ProjectMedia src={Tables}></ProjectMedia>
+        <ProjectMedia src={MobileMail2} />
       </GridContainer>
     </motion.main>
   );

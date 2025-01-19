@@ -57,19 +57,12 @@ export default function Home() {
               Actively building out the design team.
             </WorkExperience>
             <WorkExperience title="Independent Practice">
-              Design consulting for emerging AI and productivity companies.
-              Notable clients include{' '}
-              <TextLink super={1} link="https://cursor.sh/">
-                Anysphere (Cursor AI)
-              </TextLink>
-              ,{' '}
-              <TextLink super={2} link="https://natural.ai/#/">
-                Brain Technologies (Natural AI)
-              </TextLink>
-              , and
-              <TextLink super={3} link="https://plane.so/">
-                Plane
-              </TextLink>
+              Design consulting for Art and Exhibition Design with
+              notable clients including{' '}
+              <TextLink super={1} link="https://lalithkala.org/">
+                Kerala Lalithakala Akademi
+              </TextLink>{' '}
+              and dvjdv
               .
             </WorkExperience>
             <WorkExperience title="Anagram" date="2020">
@@ -91,8 +84,8 @@ export default function Home() {
           </div>
         </section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-3 grid-gap">
-          {/* COLUMN 1 */}
 
+          {/* COLUMN 1 */}
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
               title="BookWorm Pavilion"
@@ -101,53 +94,51 @@ export default function Home() {
               content={Skiff}
             />
             <ProjectCard
-              title="Cursor AI"
-              description="AI Tooling"
-              link="/cursor"
-              content={Cursor}
+              title="Brain Technologies"
+              description="Conversational AI"
+              link="/brain"
+              content={Brain}
             />
-
-            <ProjectCard
-              title="Thinkspace"
-              description="Assistive AI Agents"
-              link="/thinkspace"
-              isVideo
-              content={'/project-covers/thinkspace.mp4'}
-            />
-          </div>
-          {/* COLUMN 2 */}
-          <div className={`flex flex-col ${gapValue}`}>
-            <ProjectCard
+            {/*
+             <ProjectCard
               title="Multimodal Search"
               description="Brain Technologies"
               link="/brain"
               isVideo
               content={'/project-covers/brain-nested-query.mp4'}
+            />   */}
+            <ProjectCard
+              title="Velammal Project"
+              description="Architectural Modularity"
+              link="/aiga"
+              content={AIGA}
             />
+           
+          </div>
+          {/* COLUMN 2 */}
+          <div className={`flex flex-col ${gapValue}`}>
+            <ProjectCard
+              title="Data is the new ART"
+              link="/plane"
+              description="Wanna do research in this"
+              locked
+              content={Plane}
+            />
+            <ProjectCard
+              title="Neydhal"
+              description="Exhibition along with KMB 2023"
+              link="/apple"
+              isVideo
+              content={'/project-covers/apple.mp4'}
+            />
+            
+            
             {/* <ProjectCard
               title="Collector Profile"
               description="Azuki"
               link="/azuki/#collector"
               content={CollectorStatus}
             /> */}
-            <ProjectCard
-              title="Plane"
-              link="/plane"
-              description="Productivity"
-              content={Plane}
-            />
-            <ProjectCard
-              title="Skiff Pages"
-              description="Editor Tool"
-              link="/skiff/#editor"
-              content={FormatBar}
-            />
-            <ProjectCard
-              title="AIGA Hue"
-              description="Data Visualization"
-              link="/aiga"
-              content={AIGA}
-            />
             <ProjectCard
               title="LIGHT ENGINE"
               description="Industrial Design"
@@ -158,26 +149,7 @@ export default function Home() {
 
           {/* COLUMN 3 */}
           <div className={`flex flex-col ${gapValue}`}>
-            <ProjectCard
-              title="Apple"
-              description="Conversational AI"
-              link="/apple"
-              isVideo
-              content={'/project-covers/apple.mp4'}
-            />
-
-            <ProjectCard
-              title="Brain Technologies"
-              description="Conversational AI"
-              link="/brain"
-              content={Brain}
-            />
-            <ProjectCard
-              title="Skiff Mail"
-              description="Productivity Tooling"
-              link="/skiff/#mail"
-              content={Compose}
-            />
+            
             <ProjectCard
               title="Pixel Push"
               description="Multiplayer Art"
@@ -185,7 +157,20 @@ export default function Home() {
               isVideo
               content={'/project-covers/pixel-push.mp4'}
             />
-
+            
+            <ProjectCard
+              title="Azuki"
+              description="Media Interfaces"
+              link="/azuki"
+              content={Azuki}
+            />
+            <ProjectCard
+              title="Thinkspace"
+              description="Assistive AI Agents"
+              link="/thinkspace"
+              isVideo
+              content={'/project-covers/thinkspace.mp4'}
+            />
             <ProjectCard
               title="Metalink Labs"
               description="Design systems"

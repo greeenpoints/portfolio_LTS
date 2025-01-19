@@ -24,7 +24,7 @@ export default function Plane() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero content="/project-covers/plane.jpg" />
-        <ProjectTitle role="Productivity">Plane</ProjectTitle>
+        <ProjectTitle role="Wanna do research in this">Data is the new ART</ProjectTitle>
         <ProjectBody col={2}>
           Plane is a software company combining task management, wikis, and
           editor features into one comprehensive productivity platform. I
@@ -41,11 +41,6 @@ export default function Plane() {
         <ProjectMedia noShadow pt pr src={listAssignee}></ProjectMedia>
         <ProjectMedia noShadow pt pl src={filters}></ProjectMedia>
         <ProjectMedia noShadow pt pr src={table}></ProjectMedia>
-        <ProjectMedia noShadow pt pr src={kanban}></ProjectMedia>
-        <ProjectMedia noShadow pt pr src={displayFilter}></ProjectMedia>
-        <ProjectMedia noShadow pt pr src={timeline}></ProjectMedia>
-        <ProjectMedia noShadow pt pr src={displaySort}></ProjectMedia>
-        <ProjectMedia noShadow pt pr src={calendar}></ProjectMedia>
       </GridContainer>
     </motion.main>
   );
