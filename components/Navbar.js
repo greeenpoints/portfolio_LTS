@@ -52,14 +52,14 @@ export default function Navbar(props) {
         passHref
         href="/"
       >
-        <h1 className="">Joseph Zhang</h1>
+        <h1 className="">Abhishek Benny</h1>
       </Link>
 
       <p className="col-span-6 md:col-start-7 lg:col-start-7 md:col-span-3 lg:col-span-2">
-        Interaction Designer
+        Artist / Designer
       </p>
       <p className="hidden col-span-3 lg:inline md:col-start-9">
-        Los Angeles, California
+        Mumbai, India
       </p>
       {pageName !== '/' && (
         <div className="absolute right-0 flex justify-end col-start-12 top-[50%] translate-y-[-50%] ">
