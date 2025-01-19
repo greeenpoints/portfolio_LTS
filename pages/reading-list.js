@@ -39,37 +39,37 @@ const gapValue = 'gap-6';
 //     setYearCounter(countYears());
 //   }, []);
 
-  return (
-    <main className="pt-8">
-      <GridContainer>
-        <div className="col-start-1 col-end-13 md:col-end-5">
-          <TitleCard yearCounter={yearCounter} role="">
-            Reading List
-            <span className="ml-2 text-yellow-300">{books.length}</span>
-          </TitleCard>
-        </div>
-        {/* BOOKS */}
-        <div className="col-start-1 md:col-start-5 col-end-13 grid-cols-12 grid grid-gap !gap-y-8">
-          {books.map((book, index) => {
-            const author = book.properties.author.rich_text[0].plain_text;
-            // const description = book.properties.description.rich_text[0].plain_text;
-            const image = book.properties.image.url;
-            const url = book.properties.url.url;
-            const title = book.properties.title.title[0].plain_text;
-            return (
-              <BookCard
-                key={index}
-                image={image}
-                author={author}
-                title={title}
-                url={url}
-              />
-            );
-          })}
-        </div>
-      </GridContainer>
-    </main>
-  );
+  // return (
+  //   <main className="pt-8">
+  //     <GridContainer>
+  //       <div className="col-start-1 col-end-13 md:col-end-5">
+  //         <TitleCard yearCounter={yearCounter} role="">
+  //           Reading List
+  //           <span className="ml-2 text-yellow-300">{books.length}</span>
+  //         </TitleCard>
+  //       </div>
+  //       {/* BOOKS */}
+  //       <div className="col-start-1 md:col-start-5 col-end-13 grid-cols-12 grid grid-gap !gap-y-8">
+  //         {books.map((book, index) => {
+  //           const author = book.properties.author.rich_text[0].plain_text;
+  //           // const description = book.properties.description.rich_text[0].plain_text;
+  //           const image = book.properties.image.url;
+  //           const url = book.properties.url.url;
+  //           const title = book.properties.title.title[0].plain_text;
+  //           return (
+  //             <BookCard
+  //               key={index}
+  //               image={image}
+  //               author={author}
+  //               title={title}
+  //               url={url}
+  //             />
+  //           );
+  //         })}
+  //       </div>
+  //     </GridContainer>
+  //   </main>
+  // );
 
 
 const TitleCard = (props) => {
