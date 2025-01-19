@@ -1,16 +1,16 @@
 import ProjectCard from '../components/home/ProjectCard';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import Skiff from '../public/project-covers/skiff.jpg';
 import Compose from '../public/work/skiff/compose-modal.jpg';
 import Brain from '../public/project-covers/natural.jpg';
 import Azuki from '../public/project-covers/azuki.jpg';
+import CollectorStatus from '../public/project-covers/collector-status.jpg';
 import Cursor from '../public/project-covers/cursor.jpg';
 import AIGA from '../public/project-covers/aiga-square.jpg';
 import Metalink from '../public/project-covers/metalink.jpg';
 import SkiffIcons from '../public/project-covers/skiffIcons.jpg';
-import AnimeCom from '../public/project-covers/animecom.jpg';
 import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
 
@@ -29,20 +29,17 @@ export default function Home() {
             <p
               className={`col-start-1 col-end-13 mb-4 text-white body z-1000 md:col-start-1 md:col-span-5 md:mb-0`}
             >
-              Jo (He/Him) designs interfaces. He thrives in complex, ambiguous
-              problem spaces focused around interactive media, digital tooling,
-              and multimodal interaction. He studied{' '}
-              <TextLink link="https://design.cmu.edu/">
-                Communication Design
+              Abhi (He/Him) designs Art and Experiences. He thrives at the intersection of 
+              Art and AI, focusing on interactive media, spatial storytelling,
+              and user-centred solutions. He is studying Interaction Design
+              at{' '}
+              <TextLink link="https://www.idc.iitb.ac.in/">
+                IDC, IIT Bombay
               </TextLink>{' '}
-              and{' '}
-              <TextLink link="https://www.hcii.cmu.edu/">
-                Human-Computer Interaction
-              </TextLink>{' '}
-              at Carnegie Mellon University, an experience he holds fondly and
-              will cherish for the rest of his life. If you have an interesting
-              idea, please{' '}
-              <TextLink link="mailto:jxsephz@gmail.com">get in touch</TextLink>.
+              & has a background in Architecture with a deep passion for blending Art and GenAI;
+              his work explores the fine line between functionality and imagination. 
+              If you want to discuss Art, GenAI, or chai, feel free to{' '}
+              <TextLink link="mailto:abhishekbenny98@gmail.com">get in touch</TextLink>.
             </p>
           </div>
           {/* WORK EXPERIENCE */}
@@ -52,7 +49,7 @@ export default function Home() {
               Description
             </p>
             <WorkExperience
-              title="Azuki"
+              title="Des.Bin"
               date="2022 - Present"
               description=""
             >
@@ -75,18 +72,21 @@ export default function Home() {
               </TextLink>
               .
             </WorkExperience>
-            <WorkExperience title="Skiff" date="2022 - 2023">
+            <WorkExperience title="Anagram" date="2020">
               First full-time design hire. 0→1 design for Email, Editor, Drive,
               Calendar. Scaled Skiff Mail to 1M+ users. Recently{' '}
-              <TextLink link="https://www.notion.so/blog/meet-skiff-the-newest-member-of-the-notion-family">
-                acquired by Notion HQ
+              <TextLink link="https://anagramarchitects.com/">
+                Anagram
               </TextLink>
               .
             </WorkExperience>
-            <WorkExperience title="Apple" date="2020 -2021">
-              Two summers at Apple working on conversational AI interfaces for
-              Siri in the AI/ML Organization. Explored multimodal patterns and
-              new behaviors empowered by natural language input.
+            <WorkExperience title="Nudes" date="2019 -2020">
+              Six months at Nudes working on Parametric Architecture and designing
+              exbitions and products{' '}
+              <TextLink link="https://www.instagram.com/nurukarim/?hl=en">
+                Nudes
+              </TextLink>{' '}
+                new behaviors empowered by natural language input.
             </WorkExperience>
           </div>
         </section>
@@ -95,23 +95,10 @@ export default function Home() {
 
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
-              title="Anime.com"
-              description="Product"
-              locked
-              content={AnimeCom}
-            />
-            <ProjectCard
-              title="Azuki"
-              description="Consumer Product"
-              link="/azuki"
-              content={Azuki}
-            />
-            <ProjectCard
-              title="Skiff"
-              description="productivity"
+              title="BookWorm Pavilion"
+              description="Nudes Studio"
               link="/skiff"
               content={Skiff}
-              notionLabel
             />
             <ProjectCard
               title="Cursor AI"
@@ -126,12 +113,6 @@ export default function Home() {
               link="/thinkspace"
               isVideo
               content={'/project-covers/thinkspace.mp4'}
-            />
-            <ProjectCard
-              title="Skiff Icons"
-              description="Branding & Systems"
-              link="/skiff/#icons"
-              content={SkiffIcons}
             />
           </div>
           {/* COLUMN 2 */}
