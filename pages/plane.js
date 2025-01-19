@@ -26,21 +26,22 @@ export default function Plane() {
         <ProjectHero content="/project-covers/plane.jpg" />
         <ProjectTitle role="Wanna do research in this">Data is the new ART</ProjectTitle>
         <ProjectBody col={2}>
-          Plane is a software company combining task management, wikis, and
-          editor features into one comprehensive productivity platform. I
-          consulted and advised the team around core product surfaces. This
-          included redesigning navigation and all task views from scratch
-          — kanban, list, calendar, table, and timeilne view.
+        "NewsScape: The World Through Art" is an upcoming AI-driven initiative that 
+        transforms hourly global news into dynamic art pieces. By using colors, textures, 
+        and patterns to represent countries, topics, and tones, it aims to reveal hidden 
+        trends in global narratives while creating a visually engaging and evolving art collection.
         </ProjectBody>
         <ProjectDetails
-          role={['Product Designer']}
-          collaborators={['Plane team', 'Bryce Li']}
-          duration="3 months"
+          role={['Academic Project']}
+          collaborators={['In talks with Prof.']}
+          duration=" -- "
         />
 
-        <ProjectMedia noShadow pt pr src={listAssignee}></ProjectMedia>
-        <ProjectMedia noShadow pt pl src={filters}></ProjectMedia>
+        <ProjectMedia noShadow src={listAssignee}></ProjectMedia>
+        <ProjectMedia noShadow src={filters}></ProjectMedia>
+        {/*
         <ProjectMedia noShadow pt pr src={table}></ProjectMedia>
+        */}
       </GridContainer>
     </motion.main>
   );

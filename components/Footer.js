@@ -70,11 +70,6 @@ export default function Footer() {
               Twitter
             </TextLink>
           </p>
-          <p>
-            <TextLink sameTab super={4} link="/reading-list">
-              Reading
-            </TextLink>
-          </p>
         </span>
         <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-9`}>
           <p>{`Let's build something together.`}</p>
