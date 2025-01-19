@@ -3,7 +3,6 @@ import CardVideo from '../CardVideo';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import * as loadingCopy from '../loadingCopy';
-import Preloader from '../Preloader';
 import ProjectBody from './ProjectBody';
 import { twMerge } from 'tailwind-merge';
 
@@ -90,11 +89,11 @@ export default function ProjectMedia(props) {
           />
         ) : (
           <div className="relative">
-            <Preloader
+            {/* <Preloader
               dark={props.dark ? true : false}
               loadingPhrase={loadingPhrase}
               isContentLoaded={isImageLoaded}
-            />
+            /> */}
             <article
               className={twMerge(
                 'z-10 w-full h-auto transition duration-500 rounded-md ease-out text-[0px]',
