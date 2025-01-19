@@ -12,24 +12,24 @@ export default function ProjectMedia(props) {
   const [background, setBackground] = useState();
   const [path, setPath] = useState();
 
-  const bgColors = {
-    plane: [`bg-gray-200`],
-    skiff: ['bg-gray-200', 'bg-[#4F4C59]'],
-    azuki: ['bg-[#EBEBE6]', 'bg-gray-800'],
-    metalink: 'bg-gray-700',
-    experiments: 'bg-white/[.15]',
-  };
+  // const bgColors = {
+  //   plane: [`bg-gray-200`],
+  //   skiff: ['bg-gray-200', 'bg-[#4F4C59]'],
+  //   azuki: ['bg-[#EBEBE6]', 'bg-gray-800'],
+  //   metalink: 'bg-gray-700',
+  //   experiments: 'bg-white/[.15]',
+  // };
 
   //determine background
-  const determineBackground = () => {
-    if (Array.isArray(bgColors[path])) {
-      props.dark
-        ? setBackground(bgColors[path][1])
-        : setBackground(bgColors[path][0]);
-    } else {
-      setBackground(bgColors[path]);
-    }
-  };
+  // const determineBackground = () => {
+  //   if (Array.isArray(bgColors[path])) {
+  //     props.dark
+  //       ? setBackground(bgColors[path][1])
+  //       : setBackground(bgColors[path][0]);
+  //   } else {
+  //     setBackground(bgColors[path]);
+  //   }
+  // };
 
   //preloader
   const handleImageLoad = (e) => {
@@ -56,7 +56,7 @@ export default function ProjectMedia(props) {
     <>
       <div
         id={props.id}
-        className={`block grid overflow-hidden col-start-1 col-end-13 transition duration-300
+        className={`grid overflow-hidden col-start-1 col-end-13 transition duration-300
           ${background}
           ${props.large ? 'md:col-start-1' : 'md:col-start-5'}
           ${
