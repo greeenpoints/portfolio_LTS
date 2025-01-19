@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import TextLink from '../components/TextLink';
+import React from 'react';
+import { motion } from 'framer-motion';
+
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
@@ -8,15 +8,15 @@ import ProjectMedia from '../components/projects/ProjectMedia';
 import ProjectTitle from '../components/projects/ProjectTitle';
 import ProjectDetails from '../components/projects/ProjectDetails';
 
-import Notifs from '../public/work/brain/notifications.jpg';
+
 import DS from '../public/work/metalink/ds.jpg';
 import DS2 from '../public/work/metalink/ds-2.jpg';
 import MembersPopup from '../public/work/metalink/members-popup.jpg';
-import Launchpad from '../public/work/metalink/launchpad.jpg';
+
 import ProfileModal from '../public/work/metalink/profile-modal.jpg';
 import MessageStates from '../public/work/metalink/message-states.jpg';
 import Message from '../public/work/metalink/message.jpg';
-import Trading1 from '../public/work/metalink/trading-1.jpg';
+
 
 export default function Metalink() {
   return (

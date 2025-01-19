@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
@@ -26,7 +26,6 @@ import auctionK112 from '../public/work/azuki/auction-k11-2.jpeg';
 import ambushLanding from '../public/work/azuki/ambush-landing.jpg';
 import equipBeanz from '../public/work/azuki/equip-beanz.jpg';
 import equipExamples from '../public/work/azuki/equip-examples.png';
-import rabbitTicket from '../public/work/azuki/rabbit-ticket.jpg';
 import s2_mint from '../public/work/azuki/s2-mint.jpg';
 import s2_mint_closeup from '../public/work/azuki/s2-mint-closeup.jpg';
 import s2_reveal from '../public/work/azuki/s2-reveal.jpg';

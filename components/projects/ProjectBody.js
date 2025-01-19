@@ -1,7 +1,4 @@
-import GridContainer from '../GridContainer';
-import TextLink from '../TextLink';
-import { useRouter } from 'next/router';
-import CardVideo from '../CardVideo';
+
 import { twMerge } from 'tailwind-merge';
 
 export default function BodyText(props) {

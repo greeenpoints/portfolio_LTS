@@ -1,4 +1,4 @@
-import TextLink from '../TextLink';
+
 import CardVideo from '../CardVideo';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';

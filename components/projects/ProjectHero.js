@@ -1,6 +1,5 @@
-import GridContainer from '../GridContainer';
-import React, { useState, useEffect } from 'react';
-import CardVideo from '../CardVideo';
+
+import React from 'react';
 import Media from '../Media';
 
 export default function ProjectHero(props) {

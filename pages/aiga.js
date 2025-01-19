@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
-import ProjectMedia from '../components/projects/ProjectMedia';
 import ProjectTitle from '../components/projects/ProjectTitle';
 import ExternalVideo from '../components/projects/ExternalVideo';
 import Spacer from '../components/projects/Spacer';
 import LinkCard from '../components/projects/LinkCard';
-import Link from 'next/link';
 import ProjectDetails from '../components/projects/ProjectDetails';
 
 const item = {

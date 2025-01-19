@@ -1,7 +1,4 @@
-import GridContainer from '../GridContainer';
-import TextLink from '../TextLink';
-import { useRouter } from 'next/router';
-import CardVideo from '../CardVideo';
+
 
 export default function ProjectDetails(props) {
   const roles = props.role.map((role, index) => (

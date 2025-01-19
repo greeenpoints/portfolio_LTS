@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import {
   motion,
-  AnimatePresence,
-  SwitchLayoutGroupContext,
 } from 'framer-motion';
-import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectMedia from '../components/projects/ProjectMedia';
 import ProjectTitle from '../components/projects/ProjectTitle';
 import ExternalVideo from '../components/projects/ExternalVideo';
-import LinkCard from '../components/projects/LinkCard';
 import ProjectDetails from '../components/projects/ProjectDetails';
 import GalleryArt from '../public/work/pixelpush/gallery-art.jpg';
 import Spacer from '../components/projects/Spacer';

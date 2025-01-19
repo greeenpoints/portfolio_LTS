@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import TextLink from '../components/TextLink';
+import React from 'react';
+import { motion} from 'framer-motion';
 import GridContainer from '../components/GridContainer';
 import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
-import ProjectMedia from '../components/projects/ProjectMedia';
 import ProjectTitle from '../components/projects/ProjectTitle';
 import ProjectDetails from '../components/projects/ProjectDetails';
 import LinkCard from '../components/projects/LinkCard';

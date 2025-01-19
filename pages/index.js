@@ -1,12 +1,11 @@
 import ProjectCard from '../components/home/ProjectCard';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import TextLink from '../components/TextLink';
 import GridContainer from '../components/GridContainer';
 import Skiff from '../public/project-covers/skiff.jpg';
 import Compose from '../public/work/skiff/compose-modal.jpg';
 import Brain from '../public/project-covers/natural.jpg';
 import Azuki from '../public/project-covers/azuki.jpg';
-import CollectorStatus from '../public/project-covers/collector-status.jpg';
 import Cursor from '../public/project-covers/cursor.jpg';
 import AIGA from '../public/project-covers/aiga-square.jpg';
 import Metalink from '../public/project-covers/metalink.jpg';

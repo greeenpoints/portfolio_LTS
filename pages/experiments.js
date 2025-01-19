@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import TextLink from "../components/TextLink";
+import { motion } from "framer-motion";
 import GridContainer from "../components/GridContainer";
 import ProjectHero from "../components/projects/ProjectHero";
 import ProjectBody from "../components/projects/ProjectBody";
 import ProjectMedia from "../components/projects/ProjectMedia";
 import ProjectTitle from "../components/projects/ProjectTitle";
 import ProjectDetails from "../components/projects/ProjectDetails";
-import MobileMockupVideo from "../components/projects/MobileMockupVideo";
 import LinkCard from "../components/projects/LinkCard";
 import Spacer from "../components/projects/Spacer";
 import ExternalVideo from "../components/projects/ExternalVideo";
@@ -67,7 +65,7 @@ export default function Brain() {
           was completed with an Arduino Uno and a few thoughtfully selected
           sensors.
         </ProjectBody>
-        <ProjectMedia
+        {/* <ProjectMedia
           hasControl
           src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bc51589b-83e1-4394-8693-72f01371a7ff/sensor-matrix-c.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T041115Z&X-Amz-Expires=86400&X-Amz-Signature=545d5d48747249cea68f736e3a1ad6a989d7c85c9ba2aadf902f0045dbbe5b5d&X-Amz-SignedHeaders=host&x-id=GetObject"
           isVideo
@@ -75,8 +73,8 @@ export default function Brain() {
         >
           A reverse space invasion game using an accelerometer and 8x8 LED
           board.
-        </ProjectMedia>
-        <ProjectMedia
+        </ProjectMedia> */}
+        {/* <ProjectMedia
           hasControl
           poster="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5d1b8ac8-a5b5-43fa-817e-dfa07159812e/Screenshot_2023-03-15_at_9.26.14_PM.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T042657Z&X-Amz-Expires=86400&X-Amz-Signature=5586953897af7b8e6ace4305a845dbf27bd42b1e2b20d7238cb09836752e336d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Screenshot%25202023-03-15%2520at%25209.26.14%2520PM.jpg%22&x-id=GetObject"
           src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c248e905-4e7f-41bd-b18a-fdcb2ec6da15/sensor-chess.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230316T040537Z&X-Amz-Expires=86400&X-Amz-Signature=db31c5f5d5c48f65b55931705acf519fa02f04c303dd59ac62a904cb1ca06dbc&X-Amz-SignedHeaders=host&x-id=GetObject"
@@ -85,7 +83,7 @@ export default function Brain() {
           Touchless chess clock leveraging 2 Time-of-Flight distance sensors.
           Players set and confirm time settings based on hand duration and
           proximity.
-        </ProjectMedia>
+        </ProjectMedia> */}
         <Divider />
         <ProjectBody title="Contextual Media">
           {`Current attachable media (image, video, audio) are detached from the
@@ -137,9 +135,9 @@ export default function Brain() {
             "Figma",
           ]}
         />
-        <LinkCard link="https://josephz.notion.site/Pixel-Push-48910c3a971747b0b6fc3f31572b9984">
+        {/* <LinkCard link="https://josephz.notion.site/Pixel-Push-48910c3a971747b0b6fc3f31572b9984">
           View complete documentation
-        </LinkCard>
+        </LinkCard> */}
 
         <ExternalVideo url="https://player.vimeo.com/video/488803937?h=99634d02a7&title=0&byline=0&portrait=0"></ExternalVideo>
         <ProjectMedia src={GalleryArt}></ProjectMedia>
@@ -170,9 +168,9 @@ export default function Brain() {
         <LinkCard col={1} link="https://josephz-me.github.io/aiga-hue/">
           View live website
         </LinkCard>
-        <LinkCard link="https://josephz.notion.site/AIGA-Hue-38cd5f40c38c464ab1c5885468a1a3de">
+        {/* <LinkCard link="https://josephz.notion.site/AIGA-Hue-38cd5f40c38c464ab1c5885468a1a3de">
           View complete documentation
-        </LinkCard>
+        </LinkCard> */}
         <ExternalVideo url="https://player.vimeo.com/video/529104061?h=d6d37cfb1c&title=0&byline=0&portrait=0"></ExternalVideo>
         <ProjectBody caption={true}>
           {`Synthesized +9400 data points from AIGA's census and interactively
@@ -195,9 +193,9 @@ export default function Brain() {
           duration="7 weeks"
           tools={["javascript"]}
         />
-        <LinkCard link="https://josephz.notion.site/Thinkspace-24f3dc1c62904b0da412b0a4230cc92d">
+        {/* <LinkCard link="https://josephz.notion.site/Thinkspace-24f3dc1c62904b0da412b0a4230cc92d">
           View complete documentation
-        </LinkCard>
+        </LinkCard> */}
         <ExternalVideo url="https://player.vimeo.com/video/704621543?h=5407db28dd&title=0&byline=0&portrait=0"></ExternalVideo>
       </GridContainer>
     </motion.main>
