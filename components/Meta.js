@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 function Meta() {
   return (
@@ -11,21 +12,21 @@ function Meta() {
       />
 
       {/* Primary Meta Tag */}
-      <title>Joseph Zhang – Interaction Designer</title>
-      <meta name="title" content="Joseph Zhang – Interaction designer" />
+      <title>Abhishek Benny – Artist / Designer</title>
+      <meta name="title" content="Abhishek Benny – Artist / Designer" />
       <meta
         name="description"
-        content="Joseph is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
       ></meta>
 
       {/* Open Graph/FB */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://metatags.io/" />
-      <meta property="og:title" content="Joseph Zhang – Interaction designer" />
+      <meta property="og:title" content="Abhishek Benny – Artist / Designer" />
 
       <meta
         property="og:description"
-        content="Joseph is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
       />
       <meta property="og:image" content="/metatag-preview.jpg" />
 
@@ -34,11 +35,11 @@ function Meta() {
       <meta property="twitter:url" content="https://metatags.io/" />
       <meta
         property="twitter:title"
-        content="Joseph Zhang – Interaction designer"
+        content="Abhishek Benny – Artist / Designer"
       />
       <meta
         property="twitter:description"
-        content="Joseph is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
       />
       <meta property="twitter:image" content="/metatag-preview.jpg" />
 
@@ -46,15 +47,15 @@ function Meta() {
       <link key="favicon" rel="icon" href="/favicon.jpg" importance="low" />
       <link key="apple-touch-icon" rel="apple-touch-icon" href="/favicon.jpg" />
       <link rel="stylesheet" href="https://use.typekit.net/liy8bpw.css"></link>
-      {/* <link
+      <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
         rel="stylesheet"
-      ></link> */}
+      ></link>
       <link rel="stylesheet" href="https://use.typekit.net/liy8bpw.css"></link>
-      {/* <script
+      <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-7T632FJ4W4"
-      ></script> */}
+      ></script>
     </Head>
   );
 }
