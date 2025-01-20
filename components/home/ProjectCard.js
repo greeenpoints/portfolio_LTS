@@ -47,7 +47,7 @@ export default function ProjectCard({ isVideo = false, ...props }) {
         <p className="caption text-zinc-500">{props.description}</p>
         {props.locked && (
           <p className="caption absolute text-neutral-100 rounded-md right-4 top-4 px-2 z-10 py-1 bg-gray-800 shadow-xl">
-            LOCKED
+            WIP
           </p>
         )}
       </div>
