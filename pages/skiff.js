@@ -76,7 +76,7 @@ export default function Skiff() {
           the creation of an interactive learning space.
         </ProjectBody>
         <ProjectMedia src={AppLogos}>
-        It creates a welcoming "landscape of books" to make reading enjoyable for 
+        It creates a welcoming &apos;landscape of books&apos; to make reading enjoyable for 
         children, encouraging exploration regardless of language.
         </ProjectMedia>
         <ProjectMedia src={MarketingLanding}>
