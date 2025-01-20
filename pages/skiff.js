@@ -68,39 +68,43 @@ export default function Skiff() {
         </LinkCard>
         <Spacer />
         <ProjectBody title="Design Process">
-          I helped transform Skiff&apos;s visual design language. This involved
-          working with{' '}
-          <TextLink link="https://www.pentagram.com/work/skiff">
-            Pentagram
+        The  {' '}
+          <TextLink link="https://www.architectural-review.com/awards/ar-public/bookworm-in-mumbai-india-by-nudes">
+           BookWorm pavilion
           </TextLink>{' '}
-          on an initial rebrand to evolving it into a usable design system,
-          complete iconography set, and visual graphic style.
+          aims to foster a sense of learning through 
+          the creation of an interactive learning space.
         </ProjectBody>
         <ProjectMedia src={AppLogos}>
-        The “BookWorm” pavilion aims to foster a sense of learning through 
-        the creation of an interactive learning space.
+        It creates a welcoming "landscape of books" to make reading enjoyable for 
+        children, encouraging exploration regardless of language.
         </ProjectMedia>
         <ProjectMedia src={MarketingLanding}>
-          Led design for the Skiff marketing site relaunch, a 2.5 month project.
-          Visit <TextLink link="https://www.skiff.com">here</TextLink>
+          Built with 3,600 modular, sustainable components, the 120&apos; x 40&apos; pavilion 
+          has a low carbon footprint and supports reading and storytelling activities.
+          {/* Visit <TextLink link="https://www.skiff.com">here</TextLink> */}
         </ProjectMedia>
         <ProjectMedia src={MarketingCards2} />
         <ProjectMedia noShadow pAll src={MarketingCards}>
-          20 interactive graphics scattered across the marketing site, each
-          individually coded in React
+        Fabricated off-site, it is deployable within a week and designed to 
+        travel across rural and urban areas.
         </ProjectMedia>
 
         <ProjectMedia id="icons" src={Icons}>
-          +200 Hand drawn icons combining angular and soft features
+        The project fosters a sense of community by encouraging interaction and 
+        learning. Visitors, especially children, use it as both a library and a playground, 
+        weaving through its nooks and climbing its shelves.
         </ProjectMedia>
         <ProjectMedia pt pl src={AppSwitcher}>
-          Global app switcher for navigation between products and workspaces.
+        The modular construction allows for scalability, with components 
+        being easily added or removed based on site conditions, budget, and available resources.
         </ProjectMedia>
         <ProjectMedia pAll src={Onboarding} />
 
         {/* MAIl */}
-        <ProjectBody id="mail" title="Output">
-        The pavilion was fabricated off-shore and deployed on-site within a week.
+        <ProjectBody id="mail" title="Extra">
+        Post-installation, donated books are distributed to schools, libraries, 
+        and community centers, leaving a lasting impact on the local educational ecosystem.
         </ProjectBody>
         <ProjectMedia pAll src={Mail} />
         <ProjectMedia pr pb pt src={Compose} />
