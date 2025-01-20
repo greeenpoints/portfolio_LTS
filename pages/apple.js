@@ -45,22 +45,24 @@ export default function Apple() {
     <motion.main className="min-h-[70vh]">
       <GridContainer>
         <ProjectHero isVideo={true} content="/project-covers/apple.mp4" />
-        <ProjectTitle role="multimodal interaction">Apple</ProjectTitle>
+        <ProjectTitle role="Exhibition along with KMB 2023">Neydhal</ProjectTitle>
         <ProjectBody col={2}>
-          During the summers of 2020 and 2021, I interned at Apple as an
-          Interaction Designer working on two core Siri teams — the
-          Understanding team with Garrett Weinberg and the Knowledge team with
-          Maria Cordell. During my time there, I designed platform-level voice
-          UI patterns and disambiguation behaviors for various hardware
-          platforms. My time at Apple involved pitching ideas to high level
-          leadership such as Robby Walker, weekly syncs with Machine Learning
-          engineers, and throwing around ideas with senior designers.
+        Neydhal is a photographic exhibition showcasing the lives of Chennai&apos;s 
+        fishing community, held alongside the {' '}
+        <TextLink link="https://www.kochimuzirisbiennale.org/">
+        Kochi-Muziris Biennale
+        </TextLink>{' '}
+        .
+        Through 
+        evocative imagery, it delves into their struggles, traditions, and connection 
+        with the sea. The exhibition blends art and narrative, offering an immersive experience 
+        that celebrates the resilience and culture of this coastal community.
         </ProjectBody>
         <ProjectDetails
-          role={['Interaction Design Intern']}
-          replaceCollab="managers"
-          collaborators={['Maria Cordell', 'Garrett Weinberg']}
-          duration="24 weeks total"
+          role={['Design Lead']}
+          replaceCollab="collaborators"
+          collaborators={['Ashish N Ramesh', 'Prasoon Suresan']}
+          duration="3 weeks total"
         />
       </GridContainer>
     </motion.main>

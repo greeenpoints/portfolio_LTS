@@ -54,32 +54,32 @@ export default function Home() {
               description=""
             >
               Design consulting for Art and Exhibition Design with
-              key focus on User Experience 
+              key focus on User Experience and immersive art that prioritize the audience&apos;s journey.
             </WorkExperience>
             <WorkExperience title="Independent Practice">
-              Design consulting for Art and Exhibition Design with
-              notable clients including{' '}
+                Collaborated with  {' '}
               <TextLink super={1} link="https://lalithkala.org/">
                 Kerala Lalithakala Akademi
               </TextLink>{' '}
-              and dvjdv
+              and govt to design and curate art shows, creating engaging and 
+              inclusive spaces for artistic expression
               .
             </WorkExperience>
             <WorkExperience title="Anagram" date="2020">
-              {/* First full-time design hire. 0→1 design for Email, Editor, Drive,
-              Calendar. Scaled Skiff Mail to 1M+ users. Recently */} {' '}
+                As an Design intern at {' '}
               <TextLink link="https://anagramarchitects.com/">
                 Anagram
               </TextLink>
-              .
+              {' '}focused on modular design, exploring adaptable and sustainable systems 
+              conducting material research, and conceptualizing modular solutions.
             </WorkExperience>
             <WorkExperience title="Nudes" date="2019 -2020">
-              Six months at Nudes working on Parametric Architecture and designing
-              exbitions and products{' '}
+              Six months at {' '}
               <TextLink link="https://www.instagram.com/nurukarim/?hl=en">
                 Nudes
               </TextLink>{' '}
-                new behaviors empowered by natural language input.
+              working on Parametric Architecture and designing exhibitions where I contributed 
+              to blended desoign with experimental methodologies. 
             </WorkExperience>
           </div>
         </section>
