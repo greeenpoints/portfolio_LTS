@@ -44,7 +44,7 @@ export default function Skiff() {
           </TextLink>{' '}
           gardens while providing space 
           for approximately 12,000 books.{' '}
-          .
+          
         </ProjectBody>
         <ProjectDetails
           role={['Design Intern']}
