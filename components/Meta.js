@@ -16,7 +16,7 @@ function Meta() {
       <meta name="title" content="Abhishek Benny – Artist / Designer" />
       <meta
         name="description"
-        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek designs art and experiences, thriving at the intersection of art and AI."
       ></meta>
 
       {/* Open Graph/FB */}
@@ -26,7 +26,7 @@ function Meta() {
 
       <meta
         property="og:description"
-        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek designs art and experiences, thriving at the intersection of art and AI."
       />
       <meta property="og:image" content="/metatag-preview.jpg" />
 
@@ -39,7 +39,7 @@ function Meta() {
       />
       <meta
         property="twitter:description"
-        content="Abhishek is a designer interested in authoring tools and multimodal interaction. "
+        content="Abhishek designs art and experiences, thriving at the intersection of art and AI."
       />
       <meta property="twitter:image" content="/metatag-preview.jpg" />
 
