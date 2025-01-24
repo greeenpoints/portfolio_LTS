@@ -23,7 +23,7 @@ export default function Home() {
     <main>
       <GridContainer>
         {/* ABOUT SECTION */}
-        <section className="my-6 grid-layout">
+        {/*<section className="my-6 grid-layout">
           <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-5">
             <p className="text-white opacity-40 caption">ABOUT</p>
             <p
@@ -42,7 +42,7 @@ export default function Home() {
               <TextLink link="mailto:abhishekbenny98@gmail.com">get in touch</TextLink>.
             </p>
           </div>
-          {/* WORK EXPERIENCE */}
+          {/* WORK EXPERIENCE *
           <div className="grid grid-cols-6 col-start-1 col-end-13 gap-3 md:col-start-7">
             <p className="col-start-1 text-white opacity-40 caption">Team</p>
             <p className="col-start-3 text-white opacity-40 caption">
@@ -82,7 +82,8 @@ export default function Home() {
               to blended desoign with experimental methodologies. 
             </WorkExperience>
           </div>
-        </section>
+        </section> */}
+        <section></section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-3 grid-gap">
 
           {/* COLUMN 1 */}
