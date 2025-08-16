@@ -52,13 +52,21 @@ export default function Navbar(props) {
         passHref
         href="/"
       >
-        <h1 className="">Abhishek Benny</h1>
+        <h1 className="">अभिषेक बेनी</h1>
       </Link>
 
+      {/* Arrow aligned to end of column 2 */}
+      <p className="hidden md:block col-start-6 col-span-1 justify-self-end text-yellow-300">
+        ⟶
+      </p>
+
       <p className="col-span-6 md:col-start-7 lg:col-start-7 md:col-span-3 lg:col-span-2">
+        <Link className="hover:text-yellow-300 mr-2" passHref href="/art">
+          [ART]
+        </Link>
         Artist / Designer
       </p>
-      <p className="hidden col-span-3 lg:inline md:col-start-9">
+      <p className="hidden col-span-3 lg:inline md:col-start-10 lg:col-start-10">
         Mumbai, India
       </p>
       {pageName !== '/' && (

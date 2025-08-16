@@ -44,27 +44,26 @@ export default function Footer() {
           className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-7 md:col-end-9`}
         >
           <p>
-            <TextLink noSup link="https://www.linkedin.com/in/abhibny/">
+            <TextLink link="https://www.linkedin.com/in/abhibny/">
               Linkedin
             </TextLink>
           </p>
           <p>
-            <TextLink noSup link="https://www.instagram.com/greeenpoints/">
+            <TextLink link="https://www.instagram.com/greeenpoints/">
               Instagram
             </TextLink>
           </p>
           <p>
-            <TextLink noSup link="https://x.com/shawarmawomayo">
+            <TextLink link="https://x.com/shawarmawomayo">
               Twitter
             </TextLink>
           </p>
         </span>
-        <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-9`}>
-          <p>{`Let's build something together.`}</p>
+        <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-10`}>
           <span>
-            <TextLink noSup link="mailto:abhishekbenny98@gmail.com">
-              {`abhishekbenny98@gmail.com`}
-            </TextLink>
+            <TextLink
+              link="mailto:abhishekbenny98@gmail.com"
+            >{`abhishekbenny98@gmail.com`}</TextLink>
           </span>
         </div>
       </GridContainer>
