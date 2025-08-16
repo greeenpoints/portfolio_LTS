@@ -41,14 +41,25 @@ export default function Home() {
               <TextLink link="mailto:abhishekbenny98@gmail.com">get in touch</TextLink>.
             </p>
           </div>
-          <div className="grid grid-cols-6 col-start-1 col-end-13 gap-3 md:col-start-7">
-          </div>
         </section> 
-        <section></section>
+        {/* Section label for projects */}
+        <section className="grid-layout mt-4 mb-1">
+          <p className="col-start-1 col-end-13 text-white body md:col-start-1 md:col-span-5">Key Projects</p>
+        </section>
+        {/* Breaker line after About */}
+        <section className="grid-layout mt-1 mb-4">
+          <div className="col-start-1 col-end-13 h-px bg-white/10" />
+        </section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
           {/* COLUMN 1 */}
           <div className={`flex flex-col ${gapValue}`}>
+            <ProjectCard
+              title="ERSS"
+              description="New Project"
+              link="/erss"
+              content={Metalink}
+            />
             <ProjectCard
               title="BookWorm Pavilion"
               description="Nudes Studio"
@@ -60,19 +71,18 @@ export default function Home() {
           {/* COLUMN 2 */}
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
+              title="NHAI"
+              description="New Project"
+              link="/nhai"
+              content={CollectorStatus}
+            />
+            <ProjectCard
               title="Data is the new ART"
               link="/plane"
               description="Wanna do research in this"
               locked
               content={Plane}
             /> 
-            <ProjectCard
-              title="Neydhal"
-              description="Exhibition along with KMB 2023"
-              link="/neydhal"
-              isVideo
-              content={'/project-covers/apple.mp4'}
-            />
           </div>
 
           {/* COLUMN 3 */}
@@ -80,7 +90,7 @@ export default function Home() {
             <ProjectCard
               title="City of 2140 : New York"
               description="Architectural Thesis Project"
-              link="/thinkspace"
+              link="/2140"
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />
@@ -93,6 +103,13 @@ export default function Home() {
               description="Architectural Modularity"
               link="/velammal"
               content={AIGA}
+            />
+            <ProjectCard
+              title="Neydhal"
+              description="Exhibition along with KMB 2023"
+              link="/neydhal"
+              isVideo
+              content={'/project-covers/apple.mp4'}
             />
           </div>
         </div>

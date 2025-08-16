@@ -22,6 +22,11 @@ const nextConfig = {
         destination: '/velammal',
         permanent: true,
       },
+      {
+        source: '/thinkspace',
+        destination: '/2140',
+        permanent: true,
+      },
     ];
   },
 };
