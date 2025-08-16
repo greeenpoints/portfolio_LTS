@@ -12,6 +12,16 @@ const nextConfig = {
         destination: '/bookworm',
         permanent: true,
       },
+      {
+        source: '/apple',
+        destination: '/neydhal',
+        permanent: true,
+      },
+      {
+        source: '/aiga',
+        destination: '/velammal',
+        permanent: true,
+      },
     ];
   },
 };

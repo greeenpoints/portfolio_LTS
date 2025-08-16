@@ -22,7 +22,7 @@ const container = {
   },
 };
 
-export default function Apple() {
+export default function Neydhal() {
   const [scrollY, setScrollY] = useState(0);
 
   Number.prototype.map = function (in_min, in_max, out_min, out_max) {

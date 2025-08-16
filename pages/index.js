@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section> 
         <section></section>
-        <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-3 grid-gap">
+        <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
           {/* COLUMN 1 */}
           <div className={`flex flex-col ${gapValue}`}>
@@ -54,29 +54,9 @@ export default function Home() {
               description="Nudes Studio"
               link="/bookworm"
               content={Skiff}
-            /> {/*
-            <ProjectCard
-              title="Brain Technologies"
-              description="Conversational AI"
-              link="/brain"
-              content={Brain}
-            /> */}
-            {/*
-             <ProjectCard
-              title="Multimodal Search"
-              description="Brain Technologies"
-              link="/brain"
-              isVideo
-              content={'/project-covers/brain-nested-query.mp4'}
-            />   */}
-            <ProjectCard
-              title="Velammal Project"
-              description="Architectural Modularity"
-              link="/aiga"
-              content={AIGA}
             />
-           
           </div>
+
           {/* COLUMN 2 */}
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
@@ -89,46 +69,14 @@ export default function Home() {
             <ProjectCard
               title="Neydhal"
               description="Exhibition along with KMB 2023"
-              link="/apple"
+              link="/neydhal"
               isVideo
               content={'/project-covers/apple.mp4'}
             />
-            
-            
-            {/* <ProjectCard
-              title="Collector Profile"
-              description="Azuki"
-              link="/azuki/#collector"
-              content={CollectorStatus}
-            /> */}
-            {/*
-            <ProjectCard
-              title="LIGHT ENGINE"
-              description="Industrial Design"
-              link="/lightengines"
-              content={Experiments}
-            />
-            */}
           </div>
 
           {/* COLUMN 3 */}
           <div className={`flex flex-col ${gapValue}`}>
-            {/*
-            <ProjectCard
-              title="Pixel Push"
-              description="Multiplayer Art"
-              link="/pixelpush"
-              isVideo
-              content={'/project-covers/pixel-push.mp4'}
-            />
-            
-            <ProjectCard
-              title="Azuki"
-              description="Media Interfaces"
-              link="/azuki"
-              content={Azuki}
-            />
-            */}
             <ProjectCard
               title="City of 2140 : New York"
               description="Architectural Thesis Project"
@@ -136,14 +84,16 @@ export default function Home() {
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />
-            {/*
+          </div>
+
+          {/* COLUMN 4 */}
+          <div className={`${gapValue} flex flex-col`}>
             <ProjectCard
-              title="Metalink Labs"
-              description="Design systems"
-              link="/metalink"
-              content={Metalink}
-            ></ProjectCard>
-            */}
+              title="Velammal Project"
+              description="Architectural Modularity"
+              link="/velammal"
+              content={AIGA}
+            />
           </div>
         </div>
       </GridContainer>
