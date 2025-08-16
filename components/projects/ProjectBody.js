@@ -1,4 +1,3 @@
-
 import { twMerge } from 'tailwind-merge';
 
 export default function BodyText(props) {
@@ -9,7 +8,8 @@ export default function BodyText(props) {
         'grid-gap col-start-1 col-end-13 mb-2 text-white',
         props.col == 2
           ? 'md:columns-2 md:col-start-5 md:col-end-13'
-          : 'md:col-start-5 md:col-end-13 lg:col-end-12'
+          : 'md:col-start-5 md:col-end-13 lg:col-end-12',
+        props.className
       )}
     >
       {props.title !== undefined && (

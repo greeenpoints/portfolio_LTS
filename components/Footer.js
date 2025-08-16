@@ -14,13 +14,29 @@ export default function Footer() {
   const [updatedTime, setUpdatedTime] = useState('...');
 
   useEffect(() => {
+    const controller = new AbortController();
     fetch(
-      'https://api.github.com/repos/josephz-me/portfolio-v4/commits?per_page=1'
+      'https://api.github.com/repos/josephz-me/portfolio-v4/commits?per_page=1',
+      {
+        signal: controller.signal,
+        headers: { Accept: 'application/vnd.github+json' },
+      }
     )
-      .then((res) => res.json())
       .then((res) => {
-        setUpdatedTime(res[0].commit.author.date);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((res) => {
+        if (Array.isArray(res) && res[0]?.commit?.author?.date) {
+          setUpdatedTime(res[0].commit.author.date);
+        }
+      })
+      .catch((err) => {
+        console.warn('Skipping GitHub last-updated fetch:', err);
+        setUpdatedTime('');
       });
+
+    return () => controller.abort();
   }, []);
 
   //change footer
@@ -33,7 +49,7 @@ export default function Footer() {
 
   return (  
     <footer
-      className={`flex flex-col items-center body bg-[#1C1C1C] dot-grid z-[1] w-full sticky bottom-0 text-zinc-100`}
+      className={`flex flex-col items-center body bg-black dot-grid z-[1] w-full sticky bottom-0 text-zinc-100`}
     >
       <GridContainer className="gap-y-8" footerSpacing={GLOBAL_SPACING}>
         <div
@@ -47,7 +63,7 @@ export default function Footer() {
               {`Last updated ${updatedTime.substring(
                 0,
                 updatedTime.indexOf('T')
-              )}`}{' '}
+              )}`} 
             </p>
           </span>*/}
         </div>
@@ -75,7 +91,7 @@ export default function Footer() {
           <p>{`Let's build something together.`}</p>
           <span>
             <TextLink
-              super={5}
+              super={4}
               link="mailto:abhishekbenny98@gmail.com"
             >{`abhishekbenny98@gmail.com`}</TextLink>
           </span>
@@ -85,11 +101,6 @@ export default function Footer() {
       <div
         className={`overflow-hidden relative col-start-1 col-end-13 pb-2 w-full caption text-clip`}
       >
-        <p
-          className={`whitespace-nowrap text-clip text-zinc-600 hover:text-yellow-600`}
-        >
-          {aboutText.repeat(10)}
-        </p>
       </div>
     </footer>
   );

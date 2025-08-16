@@ -5,10 +5,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: ['offbit', 'ui-sans-serif'],
+      display: ['"IBM Plex Sans"', 'ui-sans-serif'],
       sans: [
-        'neue-haas-unica',
-        'IBM Plex Sans',
+        '"IBM Plex Sans"',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
