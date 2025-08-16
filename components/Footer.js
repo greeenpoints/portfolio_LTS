@@ -59,11 +59,11 @@ export default function Footer() {
             </TextLink>
           </p>
         </span>
-        <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-10`}>
+        <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3`}>
           <span>
-            <TextLink
-              link="mailto:abhishekbenny98@gmail.com"
-            >{`abhishekbenny98@gmail.com`}</TextLink>
+            <TextLink link="mailto:abhishekbenny98@gmail.com">
+              {`abhishekbenny98@gmail.com`}
+            </TextLink>
           </span>
         </div>
       </GridContainer>
