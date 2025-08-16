@@ -23,7 +23,7 @@ import Onboarding from '../public/work/skiff/onboarding.jpg';
 import MobileMail1 from '../public/work/skiff/mobile-mail-1.png';
 import MobileMail2 from '../public/work/skiff/mobile-mail-2.png';
 
-export default function Skiff() {
+export default function Bookworm() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
