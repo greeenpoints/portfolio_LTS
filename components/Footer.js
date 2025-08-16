@@ -44,17 +44,17 @@ export default function Footer() {
           className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-7 md:col-end-9`}
         >
           <p>
-            <TextLink super={1} link="https://www.linkedin.com/in/abhibny/">
+            <TextLink noSup link="https://www.linkedin.com/in/abhibny/">
               Linkedin
             </TextLink>
           </p>
           <p>
-            <TextLink super={2} link="https://www.instagram.com/greeenpoints/">
+            <TextLink noSup link="https://www.instagram.com/greeenpoints/">
               Instagram
             </TextLink>
           </p>
           <p>
-            <TextLink super={3} link="https://x.com/shawarmawomayo">
+            <TextLink noSup link="https://x.com/shawarmawomayo">
               Twitter
             </TextLink>
           </p>
@@ -62,10 +62,9 @@ export default function Footer() {
         <div className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-9`}>
           <p>{`Let's build something together.`}</p>
           <span>
-            <TextLink
-              super={5}
-              link="mailto:abhishekbenny98@gmail.com"
-            >{`abhishekbenny98@gmail.com`}</TextLink>
+            <TextLink noSup link="mailto:abhishekbenny98@gmail.com">
+              {`abhishekbenny98@gmail.com`}
+            </TextLink>
           </span>
         </div>
       </GridContainer>

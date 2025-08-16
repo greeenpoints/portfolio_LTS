@@ -1,4 +1,3 @@
-
 export default function TextLink(props) {
   return (
     <>
@@ -10,13 +9,16 @@ export default function TextLink(props) {
       >
         {props.children}
       </a>
-      <sup
-        className={`${
-          props.super ? 'font-mono' : 'font-sans'
-        } leading-[0] text-[10px] font-light text-yellow-300`}
-      >
-        {props.super ? props.super : '↗'}
-      </sup>
+      {/* Only render superscript when not explicitly disabled */}
+      {props.noSup !== true && (
+        <sup
+          className={`${
+            props.super ? 'font-mono' : 'font-sans'
+          } leading-[0] text-[10px] font-light text-yellow-300`}
+        >
+          {props.super ? props.super : '↗'}
+        </sup>
+      )}
     </>
   );
 }

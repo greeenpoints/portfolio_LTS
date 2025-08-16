@@ -8,7 +8,6 @@ import ProjectTitle from '../components/projects/ProjectTitle';
 import ProjectDetails from '../components/projects/ProjectDetails';
 import ProjectMedia from '../components/projects/ProjectMedia';
 import Spacer from '../components/projects/Spacer';
-import LinkCard from '../components/projects/LinkCard';
 
 // images
 import AppSwitcher from '../public/work/skiff/app-switcher.jpg';
@@ -57,16 +56,6 @@ export default function Bookworm() {
           duration="2019"
           tools={['Grasshopper', 'Rhino 3D']}
         />
-        <LinkCard
-          col={1}
-          link="https://www.dezeen.com/2019/12/26/wooden-book-worm-nudes-pavilion-architecture-mumbai/"
-        >
-          BookWorm on Dezeen
-        </LinkCard>
-        <LinkCard col={2} link="https://www.archdaily.com/965307/bookworm-pavilion-nudes">
-          {`BookWorm on ArchDaily`}
-        </LinkCard>
-        <Spacer />
         <ProjectBody title="Design Process">
         The  {' '}
           <TextLink link="https://www.architectural-review.com/awards/ar-public/bookworm-in-mumbai-india-by-nudes">

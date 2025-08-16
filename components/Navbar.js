@@ -45,7 +45,7 @@ export default function Navbar(props) {
   }, [router]);
 
   return (
-    <nav className="text-white body grid-layout sticky top-0 z-[100] main-bg py-4 border-solid border-b border-white/10">
+    <nav className="text-white body grid-layout sticky top-0 z-[100] bg-black py-4 border-solid border-b border-white/10">
       {/* logo */}
       <Link
         className="col-span-4 col-start-1 hover:text-yellow-300"
