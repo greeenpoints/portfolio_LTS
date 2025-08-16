@@ -27,9 +27,9 @@ export default function Bookworm() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
-        {/* <ProjectHero isVideo={false} content="/project-covers/skiff.jpg" />   */}
+        <ProjectHero isVideo={false} content="/project-covers/skiff.jpg" />
         <ProjectTitle role="Nudes Studio">BookWorm Pavilion</ProjectTitle>
-        <ProjectBody className="mt-6 md:mt-7" col={2}>
+        <ProjectBody col={2}>
           The BookWorm Pavilion project, under Nudes Studio, Mumbai led by {' '}
           <TextLink link="https://www.instagram.com/nurukarim/?hl=en">
             Ar. Nuru Karim 

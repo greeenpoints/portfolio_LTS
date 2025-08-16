@@ -7,49 +7,21 @@ const BREAKPOINT = 'col-start-1 col-end-13';
 
 export default function Footer() {
   const pageName = useRouter().asPath;
-  const [aboutText, setAboutText] = useState(
-    `▞▚▞▚▞▚▞_Next.JS_Vercel_▞▚▞▚▞▚▞_INPUT MONO_▞▚▞▚▞▚▞_OFFBIT TYPE_`
-  );
-
   const [updatedTime, setUpdatedTime] = useState('...');
 
   useEffect(() => {
-    const controller = new AbortController();
     fetch(
-      'https://api.github.com/repos/josephz-me/portfolio-v4/commits?per_page=1',
-      {
-        signal: controller.signal,
-        headers: { Accept: 'application/vnd.github+json' },
-      }
+      'https://api.github.com/repos/josephz-me/portfolio-v4/commits?per_page=1'
     )
+      .then((res) => res.json())
       .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then((res) => {
-        if (Array.isArray(res) && res[0]?.commit?.author?.date) {
-          setUpdatedTime(res[0].commit.author.date);
-        }
-      })
-      .catch((err) => {
-        console.warn('Skipping GitHub last-updated fetch:', err);
-        setUpdatedTime('');
+        setUpdatedTime(res[0].commit.author.date);
       });
-
-    return () => controller.abort();
   }, []);
-
-  //change footer
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAboutText((aboutText) => aboutText.slice(-1) + aboutText.slice(0, -1));
-    }, 300);
-    return () => clearInterval(interval);
-  }, [aboutText]);
 
   return (  
     <footer
-      className={`flex flex-col items-center body bg-black dot-grid z-[1] w-full sticky bottom-0 text-zinc-100`}
+      className={`flex flex-col items-center body bg-black dot-grid z-[1] w-full text-zinc-100`}
     >
       <GridContainer className="gap-y-8" footerSpacing={GLOBAL_SPACING}>
         <div
@@ -63,7 +35,7 @@ export default function Footer() {
               {`Last updated ${updatedTime.substring(
                 0,
                 updatedTime.indexOf('T')
-              )}`} 
+              )}`}{' '}
             </p>
           </span>*/}
         </div>
@@ -91,17 +63,12 @@ export default function Footer() {
           <p>{`Let's build something together.`}</p>
           <span>
             <TextLink
-              super={4}
+              super={5}
               link="mailto:abhishekbenny98@gmail.com"
             >{`abhishekbenny98@gmail.com`}</TextLink>
           </span>
         </div>
       </GridContainer>
-      {/* animated text bar */}
-      <div
-        className={`overflow-hidden relative col-start-1 col-end-13 pb-2 w-full caption text-clip`}
-      >
-      </div>
     </footer>
   );
 }
