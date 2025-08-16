@@ -24,7 +24,7 @@ export default function Home() {
       <GridContainer>
         {/* ABOUT SECTION */}
         <section className="my-6 grid-layout">
-          <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-5">
+          <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-7">
             <p
               className={`col-start-1 col-end-13 mb-4 text-white body z-1000 md:col-start-1 md:col-span-5 md:mb-0`}
             >
