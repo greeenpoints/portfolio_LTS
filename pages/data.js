@@ -19,7 +19,7 @@ import displaySort from '../public/work/plane/display-sort.jpg';
 import displayFilter from '../public/work/plane/display-filter.jpg';
 import filters from '../public/work/plane/filters.jpg';
 
-export default function Plane() {
+export default function Data() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
@@ -32,8 +32,8 @@ export default function Plane() {
         trends in global narratives while creating a visually engaging and evolving art collection.
         </ProjectBody>
         <ProjectDetails
-          role={['Academic Project']}
-          collaborators={['In talks with Prof.']}
+          role={["Academic Project"]}
+          collaborators={["In talks with Prof."]}
           duration=" -- "
         />
 

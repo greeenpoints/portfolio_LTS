@@ -28,7 +28,7 @@ const container = {
   },
 };
 
-export default function Home() {
+export default function City() {
   const [scrollY, setScrollY] = useState(0);
 
   Number.prototype.map = function (in_min, in_max, out_min, out_max) {

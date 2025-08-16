@@ -55,7 +55,15 @@ export default function Home() {
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
           {/* COLUMN 1 */}
-          <div className={`flex flex-col ${gapValue}`}>
+          <div className={`${gapValue} flex flex-col`}>
+            {/* ERSS at the top of column 1 */}
+            <ProjectCard
+              title="ERSS"
+              description="Academic Project"
+              link="/erss"
+              content={Brain}
+            />
+            {/* Existing first column card(s) */}
             <ProjectCard
               title="BookWorm Pavilion"
               description="Nudes Studio"
@@ -68,7 +76,7 @@ export default function Home() {
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
               title="Data is the new ART"
-              link="/plane"
+              link="/data"
               description="Wanna do research in this"
               locked
               content={Plane}
@@ -119,7 +127,7 @@ export default function Home() {
             <ProjectCard
               title="City of 2140 : New York"
               description="Architectural Thesis Project"
-              link="/thinkspace"
+              link="/city"
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />

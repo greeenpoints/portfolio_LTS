@@ -59,7 +59,7 @@ export default function Art() {
           <div className={`flex flex-col ${gapValue}`}>
             <ProjectCard
               title="Data is the new ART"
-              link="/plane"
+              link="/data"
               description="Wanna do research in this"
               locked
               content={Plane}
@@ -94,7 +94,7 @@ export default function Art() {
             <ProjectCard
               title="City of 2140 : New York"
               description="Architectural Thesis Project"
-              link="/thinkspace"
+              link="/city"
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />
