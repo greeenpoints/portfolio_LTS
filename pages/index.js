@@ -77,7 +77,7 @@ export default function Home() {
             <ProjectCard
               title="Design Sys"
               description="Design systems"
-              link="/design-sys"
+              link="/dessys"
               isVideo
               content={'/project-covers/dessys.mp4'}
             />

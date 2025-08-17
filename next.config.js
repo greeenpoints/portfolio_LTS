@@ -8,23 +8,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/skiff',
-        destination: '/bookworm',
-        permanent: true,
-      },
-      {
-        source: '/apple',
-        destination: '/neydhal',
-        permanent: true,
-      },
-      {
-        source: '/aiga',
-        destination: '/velammal',
-        permanent: true,
-      },
-      {
-        source: '/thinkspace',
-        destination: '/2140',
+        source: '/design-sys',
+        destination: '/dessys',
         permanent: true,
       },
     ];

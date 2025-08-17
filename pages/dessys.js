@@ -5,7 +5,7 @@ import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
-export default function DesignSys() {
+export default function Dessys() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
