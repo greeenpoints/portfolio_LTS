@@ -29,7 +29,7 @@ export default function Art() {
         <section className="grid-layout mt-1 mb-4">
           <div className="col-start-1 col-end-13 h-px bg-white/10" />
         </section>
-        <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 relative z-10 col-start-1 col-end-13 grid-gap">
 
           {/* COLUMN 1 */}
           <div className={`flex flex-col ${gapValue}`}>

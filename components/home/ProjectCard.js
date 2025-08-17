@@ -43,7 +43,7 @@ export default function ProjectCard({ isVideo = false, ...props }) {
       </div>
 
       <div className="mt-3">
-        <div className="caption flex items-center gap-2 whitespace-nowrap overflow-hidden">
+        <div className="caption flex items-center gap-2 whitespace-nowrap overflow-hidden min-w-0">
           <span className="text-zinc-50 truncate">{props.title}</span>
           {props.description && (
             <span className="flex items-center gap-2 text-zinc-500 min-w-0">
