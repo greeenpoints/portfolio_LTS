@@ -4,7 +4,7 @@
 
 @layer components {
   *::selection {
-    @apply text-[#1E4DD9];
+    @apply text-yellow-300;
   }
 
   .h1,
@@ -55,7 +55,7 @@
   }
 
   .main-bg {
-    @apply bg-[#111111];
+    @apply bg-black;
   }
 }
 
@@ -119,7 +119,7 @@
 }
 
 .dotted-underline:hover {
-  background-image: linear-gradient(to right, #1E4DD9 50%, transparent 50%);
+  background-image: linear-gradient(to right, #e9dd34 50%, transparent 50%);
 }
 
 .dot-grid {
@@ -172,7 +172,7 @@ body {
 }
 
 html {
-  background: #111111;
+  background: #000000;
 }
 
 a {
