@@ -52,7 +52,7 @@ export default function Navbar(props) {
         passHref
         href="/"
       >
-        <h1 className="">अभिषेक बेनी</h1>
+        <h1 className="">अभिषेक बेन्नी</h1>
       </Link>
 
       {/* Arrow aligned to end of column 2 */}

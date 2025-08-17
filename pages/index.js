@@ -13,7 +13,7 @@ import Metalink from '../public/project-covers/metalink.jpg';
 import SkiffIcons from '../public/project-covers/skiffIcons.jpg';
 import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
-import Frame21 from '../public/project-covers/Frame 21.jpg';
+import NHAI from '../public/project-covers/nhai.jpg';
 import Frame5 from '../public/project-covers/Frame 5.jpg';
 import Frame22 from '../public/project-covers/Frame 22.jpg';
 import VRImage from '../public/project-covers/vr.jpg';
@@ -31,19 +31,17 @@ export default function Home() {
   <section className="mt-6 mb-2 grid-layout">
           <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-7">
             <p
-              className={`col-start-1 col-end-13 mb-4 text-white body z-1000 md:col-start-1 md:col-span-5 md:mb-0`}
+              className={`col-start-1 col-end-13 mb-4 text-zinc-300 body font-normal z-1000 md:col-start-1 md:col-span-5 md:mb-0`}
             >
-              Abhi (He/Him) designs Art and Experiences. He thrives at the intersection of 
-              Art and AI, focusing on interactive media, spatial storytelling,
-              and user-centred solutions. He is studying Interaction Design
-              at{' '}
-              <TextLink link="https://www.idc.iitb.ac.in/">
-                IDC, IIT Bombay
-              </TextLink>{' '}
-              & has a background in Architecture with a deep passion for blending Art and GenAI;
-              his work explores the fine line between functionality and imagination. 
-              If you want to discuss Art, GenAI, or chai, feel free to{' '}
-              <TextLink link="mailto:abhishekbenny98@gmail.com">get in touch</TextLink>.
+              I’m Abhishek (he/him), and I design Art and Experiences. I thrive at the
+              intersection of Art and AI, working with interactive media, spatial
+              storytelling, and user-centred solutions. Currently, I’m pursuing
+              Interaction Design at{' '}
+              <TextLink link="https://www.idc.iitb.ac.in/">IDC, IIT Bombay</TextLink>
+              {', '}with a background in Architecture. My passion lies in blending Art and
+              GenAI, exploring the fine line between functionality and imagination.
+              If you’d like to chat about Art, GenAI, or chai, I’d love to{' '}
+              <TextLink link="mailto:abhishekbenny98@gmail.com">connect</TextLink>.
             </p>
           </div>
           <div className="grid grid-cols-6 col-start-1 col-end-13 gap-3 md:col-start-7">
@@ -100,7 +98,7 @@ export default function Home() {
               title="NHAI"
               description="Project"
               link="/nhai"
-              content={Frame21}
+              content={NHAI}
             />
             {/* VR moved to Column 2 (below NHAI) */}
             <ProjectCard
