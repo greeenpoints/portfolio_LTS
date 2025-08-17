@@ -17,6 +17,7 @@ import Frame21 from '../public/project-covers/Frame 21.jpg';
 import Frame5 from '../public/project-covers/Frame 5.jpg';
 import Frame22 from '../public/project-covers/Frame 22.jpg';
 import VRImage from '../public/project-covers/vr.jpg';
+import Frame23 from '../public/project-covers/Frame 23.jpg';
 
 import Plane from '../public/project-covers/plane.jpg';
 
@@ -70,7 +71,7 @@ export default function Home() {
               title="ERSS"
               description="Academic Project"
               link="/erss"
-              content={Brain}
+              content={Frame23}
             />
             {/* Design Sys in Column 1 */}
             <ProjectCard
