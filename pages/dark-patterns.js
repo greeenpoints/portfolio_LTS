@@ -5,14 +5,14 @@ import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
-export default function NHAI() {
+export default function DarkPatterns() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
-        <ProjectHero content="/project-covers/Frame 21.jpg" />
-        <ProjectTitle role="Project">NHAI</ProjectTitle>
+        <ProjectHero content="/project-covers/cursor.jpg" />
+        <ProjectTitle role="Case study">Dark patterns</ProjectTitle>
         <ProjectBody col={2}>
-          This page is a placeholder for the NHAI project. Content coming soon.
+          A study on deceptive UI practices and how to redesign them ethically.
         </ProjectBody>
       </GridContainer>
     </motion.main>

@@ -5,14 +5,14 @@ import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
-export default function NHAI() {
+export default function DesignSys() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
-        <ProjectHero content="/project-covers/Frame 21.jpg" />
-        <ProjectTitle role="Project">NHAI</ProjectTitle>
+        <ProjectHero content="/project-covers/metalink.jpg" />
+        <ProjectTitle role="Design systems">Design Sys</ProjectTitle>
         <ProjectBody col={2}>
-          This page is a placeholder for the NHAI project. Content coming soon.
+          Notes and patterns from building robust, scalable design systems.
         </ProjectBody>
       </GridContainer>
     </motion.main>

@@ -53,6 +53,13 @@ export default function Art() {
               isVideo
               content={'/project-covers/brain-nested-query.mp4'}
             />   */}
+            <ProjectCard
+              title="Neydhal"
+              description="Exhibition along with KMB 2023"
+              link="/apple"
+              isVideo
+              content={'/project-covers/apple.mp4'}
+            />
           </div>
 
           {/* COLUMN 2 */}
@@ -64,13 +71,7 @@ export default function Art() {
               locked
               content={Plane}
             /> 
-            <ProjectCard
-              title="Neydhal"
-              description="Exhibition along with KMB 2023"
-              link="/apple"
-              isVideo
-              content={'/project-covers/apple.mp4'}
-            />
+            {/* Any other column 2 cards */}
           </div>
 
           {/* COLUMN 3 */}

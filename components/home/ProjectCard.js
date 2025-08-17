@@ -43,8 +43,15 @@ export default function ProjectCard({ isVideo = false, ...props }) {
       </div>
 
       <div className="mt-3">
-        <h1 className={`caption text-zinc-50`}>{props.title}</h1>
-        <p className="caption text-zinc-500">{props.description}</p>
+        <div className="caption flex items-center gap-2 whitespace-nowrap overflow-hidden">
+          <span className="text-zinc-50 truncate">{props.title}</span>
+          {props.description && (
+            <span className="flex items-center gap-2 text-zinc-500 min-w-0">
+              <span className="text-zinc-700">|</span>
+              <span className="truncate">{props.description}</span>
+            </span>
+          )}
+        </div>
         {props.locked && (
           <p className="caption absolute text-neutral-100 rounded-md right-4 top-4 px-2 z-10 py-1 bg-gray-800 shadow-xl">
             WIP

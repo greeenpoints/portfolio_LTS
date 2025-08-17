@@ -5,14 +5,14 @@ import ProjectHero from '../components/projects/ProjectHero';
 import ProjectBody from '../components/projects/ProjectBody';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
-export default function NHAI() {
+export default function VR() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
-        <ProjectHero content="/project-covers/Frame 21.jpg" />
-        <ProjectTitle role="Project">NHAI</ProjectTitle>
+        <ProjectHero content="/project-covers/plane.jpg" />
+        <ProjectTitle role="Experiential explorations">VR</ProjectTitle>
         <ProjectBody col={2}>
-          This page is a placeholder for the NHAI project. Content coming soon.
+          VR/AR explorations and interactive spatial experiments.
         </ProjectBody>
       </GridContainer>
     </motion.main>

@@ -13,6 +13,8 @@ import Metalink from '../public/project-covers/metalink.jpg';
 import SkiffIcons from '../public/project-covers/skiffIcons.jpg';
 import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
+import Frame21 from '../public/project-covers/Frame 21.jpg';
+import Frame5 from '../public/project-covers/Frame 5.jpg';
 
 import Plane from '../public/project-covers/plane.jpg';
 
@@ -54,6 +56,11 @@ export default function Home() {
         </section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
+
+
+
+
+
           {/* COLUMN 1 */}
           <div className={`${gapValue} flex flex-col`}>
             {/* ERSS at the top of column 1 */}
@@ -63,34 +70,53 @@ export default function Home() {
               link="/erss"
               content={Brain}
             />
+            {/* Design Sys in Column 1 */}
+            <ProjectCard
+              title="Design Sys"
+              description="Design systems"
+              link="/design-sys"
+              content={Metalink}
+            />
             {/* Existing first column card(s) */}
+            {/** HIDDEN: BookWorm Pavilion */}
+            {/*
             <ProjectCard
               title="BookWorm Pavilion"
               description="Nudes Studio"
               link="/skiff"
               content={Skiff}
             />
+            */}
           </div>
 
           {/* COLUMN 2 */}
           <div className={`flex flex-col ${gapValue}`}>
+            {/* NHAI at top of Column 2 */}
             <ProjectCard
-              title="Data is the new ART"
-              link="/data"
-              description="Wanna do research in this"
-              locked
-              content={Plane}
-            /> 
-            <ProjectCard
-              title="Neydhal"
-              description="Exhibition along with KMB 2023"
-              link="/apple"
-              isVideo
-              content={'/project-covers/apple.mp4'}
+              title="NHAI"
+              description="Project"
+              link="/nhai"
+              content={Frame21}
             />
-            
-            
-            {/* <ProjectCard
+            {/* Techniques in Column 2 */}
+            <ProjectCard
+              title="Techniques"
+              description="Process & methods"
+              link="/techniques"
+              content={Experiments}
+            />
+             {/** HIDDEN: Data is the new ART */}
+             {/*
+             <ProjectCard
+               title="Data is the new ART"
+               link="/data"
+               description="Wanna do research in this"
+               locked
+               content={Plane}
+             />
+             */}
+            {/*
+            <ProjectCard
               title="Collector Profile"
               description="Azuki"
               link="/azuki/#collector"
@@ -108,6 +134,13 @@ export default function Home() {
 
           {/* COLUMN 3 */}
           <div className={`flex flex-col ${gapValue}`}>
+            {/* Dark patterns in Column 3 */}
+            <ProjectCard
+              title="Dark patterns"
+              description="Case study"
+              link="/dark-patterns"
+              content={Frame5}
+            />
             {/*
             <ProjectCard
               title="Pixel Push"
@@ -124,6 +157,8 @@ export default function Home() {
               content={Azuki}
             />
             */}
+            {/** HIDDEN: City of 2140 : New York */}
+            {/**
             <ProjectCard
               title="City of 2140 : New York"
               description="Architectural Thesis Project"
@@ -131,6 +166,7 @@ export default function Home() {
               isVideo
               content={'/project-covers/thinkspace.mp4'}
             />
+            */}
             {/*
             <ProjectCard
               title="Metalink Labs"
@@ -143,12 +179,37 @@ export default function Home() {
 
           {/* COLUMN 4 */}
           <div className={`${gapValue} flex flex-col`}>
+            {/* VR in Column 4 */}
+            <ProjectCard
+              title="VR"
+              description="Experiential explorations"
+              link="/vr"
+              content={Plane}
+            />
+            {/** HIDDEN: Velammal Project */}
+            {/**
             <ProjectCard
               title="Velammal Project"
               description="Architectural Modularity"
               link="/aiga"
               content={AIGA}
             />
+            */}
+          </div>
+
+          {/* COLUMN 5 (new) */}
+          <div className={`${gapValue} flex flex-col`}>
+            {/** HIDDEN: Neydhal */}
+            {/**
+            <ProjectCard
+              title="Neydhal"
+              description="Exhibition along with KMB 2023"
+              link="/apple"
+              isVideo
+              content={'/project-covers/apple.mp4'}
+            />
+            */}
+            {/* Column 5 intentionally left empty for now */}
           </div>
         </div>
       </GridContainer>
