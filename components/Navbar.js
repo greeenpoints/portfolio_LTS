@@ -57,7 +57,7 @@ export default function Navbar(props) {
 
       {/* Arrow aligned to end of column 2 */}
       <p className="hidden md:block col-start-6 col-span-1 justify-self-end text-yellow-300">
-        ⟶
+        👉
       </p>
 
       <p className="col-span-6 md:col-start-7 lg:col-start-7 md:col-span-3 lg:col-span-2">
