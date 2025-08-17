@@ -15,6 +15,8 @@ import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
 import Frame21 from '../public/project-covers/Frame 21.jpg';
 import Frame5 from '../public/project-covers/Frame 5.jpg';
+import Frame22 from '../public/project-covers/Frame 22.jpg';
+import VRImage from '../public/project-covers/vr.jpg';
 
 import Plane from '../public/project-covers/plane.jpg';
 
@@ -25,7 +27,7 @@ export default function Home() {
     <main>
       <GridContainer>
         {/* ABOUT SECTION */}
-        <section className="my-6 grid-layout">
+  <section className="mt-6 mb-2 grid-layout">
           <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-7">
             <p
               className={`col-start-1 col-end-13 mb-4 text-white body z-1000 md:col-start-1 md:col-span-5 md:mb-0`}
@@ -47,7 +49,7 @@ export default function Home() {
           </div>
         </section> 
         {/* Section label for projects */}
-        <section className="grid-layout mt-4 mb-1">
+  <section className="grid-layout mt-0 mb-1">
           <p className="col-start-1 col-end-13 text-yellow-300 uppercase body md:col-start-1 md:col-span-5">Key Projects</p>
         </section>
         {/* Breaker line after About matching navbar */}
@@ -75,7 +77,8 @@ export default function Home() {
               title="Design Sys"
               description="Design systems"
               link="/design-sys"
-              content={Metalink}
+              isVideo
+              content={'/project-covers/dessys.mp4'}
             />
             {/* Existing first column card(s) */}
             {/** HIDDEN: BookWorm Pavilion */}
@@ -98,12 +101,12 @@ export default function Home() {
               link="/nhai"
               content={Frame21}
             />
-            {/* Techniques in Column 2 */}
+            {/* VR moved to Column 2 (below NHAI) */}
             <ProjectCard
-              title="Techniques"
-              description="Process & methods"
-              link="/techniques"
-              content={Experiments}
+              title="VR"
+              description="Experiential explorations"
+              link="/vr"
+              content={VRImage}
             />
              {/** HIDDEN: Data is the new ART */}
              {/*
@@ -179,12 +182,12 @@ export default function Home() {
 
           {/* COLUMN 4 */}
           <div className={`${gapValue} flex flex-col`}>
-            {/* VR in Column 4 */}
+            {/* Techniques moved to Column 4 */}
             <ProjectCard
-              title="VR"
-              description="Experiential explorations"
-              link="/vr"
-              content={Plane}
+              title="Techniques"
+              description="Process & methods"
+              link="/techniques"
+              content={Frame22}
             />
             {/** HIDDEN: Velammal Project */}
             {/**
