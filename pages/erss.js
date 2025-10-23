@@ -10,7 +10,7 @@ export default function ERSS() {
   return (
     <motion.main className="min-h-[70vh]">
       <GridContainer>
-        <ProjectHero content="/project-covers/metalink.jpg" />
+        <ProjectHero content="/project-covers/Frame 25.png" />
         <ProjectTitle role="Academic / Research Project">ERSS</ProjectTitle>
         <ProjectBody col={2}>
           Emergency Response Support System (ERSS) is a unified emergency helpline and

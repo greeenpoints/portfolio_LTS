@@ -13,11 +13,11 @@ import Metalink from '../public/project-covers/metalink.jpg';
 import SkiffIcons from '../public/project-covers/skiffIcons.jpg';
 import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
-import NHAI from '../public/project-covers/nhai.jpg';
+import ERSSCover from '../public/project-covers/erssprojectcard.png';
+import NHAICover from '../public/project-covers/nhaiprojectcard.png';
 import Frame5 from '../public/project-covers/Frame 5.jpg';
 import Frame22 from '../public/project-covers/Frame 22.jpg';
-import VRImage from '../public/project-covers/vr.jpg';
-import Frame23 from '../public/project-covers/Frame 23.jpg';
+import VRImage from '../public/project-covers/vrprojectcard.png';
 
 import Plane from '../public/project-covers/plane.jpg';
 
@@ -66,10 +66,10 @@ export default function Home() {
           <div className={`${gapValue} flex flex-col`}>
             {/* ERSS at the top of column 1 */}
             <ProjectCard
-              title="ERSS"
-              description="Academic Project"
+              title="ERSS - 112"
+              description="Fellowship Project"
               link="/erss"
-              content={Frame23}
+              content={ERSSCover}
             />
             {/* Design Sys in Column 1 */}
             <ProjectCard
@@ -96,9 +96,9 @@ export default function Home() {
             {/* NHAI at top of Column 2 */}
             <ProjectCard
               title="NHAI"
-              description="Project"
+              description="Industry Collaboration Project"
               link="/nhai"
-              content={NHAI}
+              content={NHAICover}
             />
             {/* VR moved to Column 2 (below NHAI) */}
             <ProjectCard
