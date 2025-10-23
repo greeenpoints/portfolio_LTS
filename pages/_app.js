@@ -1,14 +1,29 @@
 import '../styles/globals.scss';
 import Page from '../components/Page';
-import { GoogleAnalytics } from '@next/third-parties/google';
-// import { GoogleAnalytics } from '../components/googleAnalytics';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   return (
     <Page>
-      {/* <GoogleAnalytics /> */}
       <Component {...pageProps} />
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+
+      {/* Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-YSX5R91XDE"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YSX5R91XDE');
+          `,
+        }}
+      />
     </Page>
   );
 }
