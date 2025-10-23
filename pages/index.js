@@ -104,7 +104,7 @@ export default function Home() {
             {/* VR moved to Column 2 (below NHAI) */}
             <ProjectCard
               title="VR"
-              description="Experiential explorations"
+              description="Experiential Explorations"
               link="/vr"
               content={VRImage}
             />

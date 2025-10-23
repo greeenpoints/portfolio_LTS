@@ -44,6 +44,9 @@ export default function Footer() {
           className={`flex flex-col space-y-1 ${BREAKPOINT} md:col-start-7 md:col-end-9`}
         >
           <p>
+            <TextLink link="/abhishek-benny-resume.pdf">Resume</TextLink>
+          </p>
+          <p>
             <TextLink link="https://www.linkedin.com/in/abhibny/">
               Linkedin
             </TextLink>
