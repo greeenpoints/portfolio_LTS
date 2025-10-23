@@ -147,7 +147,8 @@ export default function Home() {
             <ProjectCard
               title="DATA VISUALIZATION"
               description=" India "
-              link="/data"
+              link="https://bukil.github.io/MAPA/"
+              isExternal
               content={DatavisCover}
             />
             {/** HIDDEN: Velammal Project */}
