@@ -16,7 +16,7 @@ import FormatBar from '../public/work/skiff/format-bar.jpg';
 import ERSSCover from '../public/project-covers/erssprojectcard.png';
 import NHAICover from '../public/project-covers/nhaiprojectcard.png';
 import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
-import Frame22 from '../public/project-covers/Frame 22.jpg';
+import TechniquesCover from '../public/project-covers/techniquesprojectcard.png';
 import VRImage from '../public/project-covers/vrprojectcard.png';
 
 import Plane from '../public/project-covers/plane.jpg';
@@ -138,8 +138,8 @@ export default function Home() {
           <div className={`flex flex-col ${gapValue}`}>
             {/* Dark patterns in Column 3 */}
             <ProjectCard
-              title="darkpatt"
-              description="Case study"
+              title="DARK PATTERNS"
+              description="Quantitative Analysis"
               link="/darkpatt"
               content={DarkpattCover}
             />
@@ -183,10 +183,10 @@ export default function Home() {
           <div className={`${gapValue} flex flex-col`}>
             {/* Techniques moved to Column 4 */}
             <ProjectCard
-              title="Techniques"
+              title="Interaction Techniques  |  Processes and Methods"
               description="Process & methods"
               link="/techniques"
-              content={Frame22}
+              content={TechniquesCover}
             />
             {/** HIDDEN: Velammal Project */}
             {/**
