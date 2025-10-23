@@ -13,6 +13,7 @@ import Metalink from '../public/project-covers/metalink.jpg';
 import SkiffIcons from '../public/project-covers/skiffIcons.jpg';
 import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
+import DessysCover from '../public/project-covers/dessysprojectcard.png';
 import ERSSCover from '../public/project-covers/erssprojectcard.png';
 import NHAICover from '../public/project-covers/nhaiprojectcard.png';
 import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
@@ -29,6 +30,10 @@ export default function Home() {
     <main>
       <GridContainer>
         {/* ABOUT SECTION */}
+
+        <br></br>
+        <br></br>
+        
   <section className="mt-6 mb-2 grid-layout">
           <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-end-7">
             <p
@@ -47,14 +52,18 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-6 col-start-1 col-end-13 gap-3 md:col-start-7">
           </div>
-        </section> 
+
+          <br></br>
+          <br></br>
+
+        </section>
         {/* Section label for projects */}
   <section className="grid-layout mt-0 mb-1">
           <p className="col-start-1 col-end-13 text-yellow-300 uppercase body md:col-start-1 md:col-span-5">Key Projects</p>
         </section>
         {/* Breaker line after About matching navbar */}
         <section className="grid-layout mt-1 mb-4">
-          <div className="col-start-1 col-end-13 h-px bg-white/10" />
+          <div className="col-start-1 col-end-13 h-px bg-white/20" />
         </section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
@@ -73,12 +82,11 @@ export default function Home() {
               content={ERSSCover}
             />
             {/* Design Sys in Column 1 */}
-            <ProjectCard
-              title="Design Sys"
-              description="Design systems"
-              link="/dessys"
-              isVideo
-              content={'/project-covers/dessys.mp4'}
+              <ProjectCard
+                title="Interaction Design"
+                description="Design Systems"
+                link="/dessys"
+                content={DessysCover}
             />
             {/* Existing first column card(s) */}
             {/** HIDDEN: BookWorm Pavilion */}

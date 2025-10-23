@@ -24,6 +24,7 @@ export default function Footer() {
       className={`flex flex-col items-center body bg-black dot-grid z-[1] w-full text-zinc-100`}
     >
       <GridContainer className="gap-y-8" footerSpacing={GLOBAL_SPACING}>
+        
         <div
           className={`flex-col space-y-2 ${BREAKPOINT} caption md:col-start-1 md:col-end-6`}
         >
