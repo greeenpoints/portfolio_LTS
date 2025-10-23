@@ -64,6 +64,7 @@ export default function Home() {
         {/* Breaker line after About matching navbar */}
         <section className="grid-layout mt-1 mb-4">
           <div className="col-start-1 col-end-13 h-px bg-white/20" />
+          
         </section>
         <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
 
