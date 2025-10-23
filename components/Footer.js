@@ -48,7 +48,7 @@ export default function Footer() {
           </p>
           <p>
             <TextLink link="https://www.linkedin.com/in/abhibny/">
-              Linkedin
+              LinkedIn
             </TextLink>
           </p>
           <p>
