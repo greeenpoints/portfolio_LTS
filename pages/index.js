@@ -15,7 +15,7 @@ import Experiments from '../public/work/experiments/LE-1.jpg';
 import FormatBar from '../public/work/skiff/format-bar.jpg';
 import ERSSCover from '../public/project-covers/erssprojectcard.png';
 import NHAICover from '../public/project-covers/nhaiprojectcard.png';
-import Frame5 from '../public/project-covers/Frame 5.jpg';
+import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
 import Frame22 from '../public/project-covers/Frame 22.jpg';
 import VRImage from '../public/project-covers/vrprojectcard.png';
 
@@ -138,10 +138,10 @@ export default function Home() {
           <div className={`flex flex-col ${gapValue}`}>
             {/* Dark patterns in Column 3 */}
             <ProjectCard
-              title="Dark patterns"
+              title="darkpatt"
               description="Case study"
-              link="/dark-patterns"
-              content={Frame5}
+              link="/darkpatt"
+              content={DarkpattCover}
             />
             {/*
             <ProjectCard
