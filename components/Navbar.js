@@ -48,7 +48,7 @@ export default function Navbar(props) {
     <nav className="text-white body grid-layout sticky top-0 z-[100] bg-black py-4 border-solid border-b border-white/10">
       {/* logo */}
       <Link
-        className="col-span-4 col-start-1 hover:text-yellow-300"
+        className="col-span-4 col-start-1 hover:text-[#4C5BFF]"
         passHref
         href="/"
       >
@@ -61,7 +61,7 @@ export default function Navbar(props) {
       </p>
 
       <p className="col-span-6 md:col-start-7 lg:col-start-7 md:col-span-3 lg:col-span-2">
-        <Link className="hover:text-yellow-300 mr-2" passHref href="/art">
+        <Link className="hover:text-[#4C5BFF] mr-2" passHref href="/art">
           [ART]
         </Link>
         Artist / Designer
@@ -76,8 +76,8 @@ export default function Navbar(props) {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className={`w-6 h-6 hover:text-yellow-300 ${
-                activeBack && 'text-yellow-300'
+              className={`w-6 h-6 hover:text-[#4C5BFF] ${
+                activeBack && 'text-[#4C5BFF]'
               }`}
             >
               <path

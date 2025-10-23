@@ -18,6 +18,7 @@ import NHAICover from '../public/project-covers/nhaiprojectcard.png';
 import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
 import TechniquesCover from '../public/project-covers/techniquesprojectcard.png';
 import VRImage from '../public/project-covers/vrprojectcard.png';
+import DatavisCover from '../public/project-covers/datavisprojectcard.png';
 
 import Plane from '../public/project-covers/plane.jpg';
 
@@ -135,8 +136,34 @@ export default function Home() {
           </div>
 
           {/* COLUMN 3 */}
+          <div className={`${gapValue} flex flex-col`}>
+            {/* Techniques and Datavis in Column 3 */}
+            <ProjectCard
+              title="Interaction Techniques "
+              description= "Methods "
+              link="/techniques"
+              content={TechniquesCover}
+            />
+            <ProjectCard
+              title="DATA VISUALIZATION"
+              description=" India "
+              link="/data"
+              content={DatavisCover}
+            />
+            {/** HIDDEN: Velammal Project */}
+            {/**
+            <ProjectCard
+              title="Velammal Project"
+              description="Architectural Modularity"
+              link="/aiga"
+              content={AIGA}
+            />
+            */}
+          </div>
+
+          {/* COLUMN 4 */}
           <div className={`flex flex-col ${gapValue}`}>
-            {/* Dark patterns in Column 3 */}
+            {/* Dark patterns in Column 4 */}
             <ProjectCard
               title="DARK PATTERNS"
               description="Quantitative Analysis"
@@ -176,26 +203,6 @@ export default function Home() {
               link="/metalink"
               content={Metalink}
             ></ProjectCard>
-            */}
-          </div>
-
-          {/* COLUMN 4 */}
-          <div className={`${gapValue} flex flex-col`}>
-            {/* Techniques moved to Column 4 */}
-            <ProjectCard
-              title="Interaction Techniques  |  Processes and Methods"
-              description="Process & methods"
-              link="/techniques"
-              content={TechniquesCover}
-            />
-            {/** HIDDEN: Velammal Project */}
-            {/**
-            <ProjectCard
-              title="Velammal Project"
-              description="Architectural Modularity"
-              link="/aiga"
-              content={AIGA}
-            />
             */}
           </div>
 
