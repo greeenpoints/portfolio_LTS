@@ -28,7 +28,7 @@ function Meta() {
         property="og:description"
         content="Abhishek designs art and experiences, thriving at the intersection of art and AI."
       />
-      <meta property="og:image" content="/metatag-preview.jpg" />
+      <meta property="og:image" content="/metatag-preview.png" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -41,11 +41,11 @@ function Meta() {
         property="twitter:description"
         content="Abhishek designs art and experiences, thriving at the intersection of art and AI."
       />
-      <meta property="twitter:image" content="/metatag-preview.jpg" />
+      <meta property="twitter:image" content="/metatag-preview.png" />
 
       {/* Favicon & fonts */}
-      <link key="favicon" rel="icon" href="/favicon.jpg" importance="low" />
-      <link key="apple-touch-icon" rel="apple-touch-icon" href="/favicon.jpg" />
+      <link key="favicon" rel="icon" href="/favicon.png" importance="low" />
+      <link key="apple-touch-icon" rel="apple-touch-icon" href="/favicon..png" />
       <link rel="stylesheet" href="https://use.typekit.net/liy8bpw.css"></link>
       <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
