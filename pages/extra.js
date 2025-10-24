@@ -211,7 +211,11 @@ export default function Extra() {
                         const { column, ...cardProps } = columnCard;
                         const cardKey = `${key}-${cardProps.link || cardProps.title || cardIndex}`;
 
-                        return <ProjectCard key={cardKey} {...cardProps} />;
+                        return (
+                          <div key={cardKey} className="extra-card-wrapper">
+                            <ProjectCard {...cardProps} />
+                          </div>
+                        );
                       })}
                     </div>
                   );
@@ -221,6 +225,31 @@ export default function Extra() {
           </React.Fragment>
         ))}
       </GridContainer>
+      <style jsx>{`
+        .extra-card-wrapper {
+          position: relative;
+        }
+
+        .extra-card-wrapper :global(.group) {
+          display: block;
+          padding: 18px;
+          border: 3px solid rgba(255, 255, 255, 0);
+          background-color: #000;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .extra-card-wrapper :global(.group:hover) {
+          border-color: rgba(246, 228, 82, 0.95);
+          box-shadow: 0 0 16px 2px rgba(246, 228, 82, 0.35);
+          transform: translateY(-3px);
+          background-image: none;
+          background-color: #000;
+        }
+
+        .extra-card-wrapper :global(.game-border) {
+          overflow: hidden;
+        }
+      `}</style>
     </main>
   );
 }
