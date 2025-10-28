@@ -38,17 +38,17 @@ export default function Extra() {
   title: 'Service / System Design',
       cards: [
         {
-          title: 'ERSS - 112',
-          description: 'Fellowship Project',
-          link: '/erss',
-          content: ERSSCover,
-          column: 3,
-        },
-        {
           title: 'NHAI',
           description: 'Industry Collaboration Project',
           link: '/nhai',
           content: NHAICover,
+          column: 3,
+        },
+        {
+          title: 'ERSS - 112',
+          description: 'Fellowship Project',
+          link: '/erss',
+          content: ERSSCover,
           column: 2,
         },
       ],
