@@ -1,20 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import GridContainer from '../components/GridContainer';
-import ProjectHero from '../components/projects/ProjectHero';
-import ProjectBody from '../components/projects/ProjectBody';
 import ProjectTitle from '../components/projects/ProjectTitle';
 
 export default function NHAI() {
-  return (
-    <motion.main className="min-h-[70vh]">
-      <GridContainer>
-        <ProjectHero content="/project-covers/Frame 21.jpg" />
-        <ProjectTitle role="Project">NHAI</ProjectTitle>
-        <ProjectBody col={2}>
-          This page is a placeholder for the NHAI project. Content coming soon.
-        </ProjectBody>
-      </GridContainer>
-    </motion.main>
-  );
+	return (
+		<motion.main className="min-h-[70vh] pt-6 md:pt-8">
+			<GridContainer className="gap-y-12">
+				<ProjectTitle role="Industry Collaboration Project">NHAI</ProjectTitle>
+				<div className="col-span-full md:col-span-9 md:col-start-4 space-y-0">
+					<div className="space-y-0">
+						<Image
+							src="/work/nhai/nhai1.svg"
+							alt="National Highways Authority of India project overview"
+							width={1280}
+							height={720}
+							className="block w-full h-auto"
+							priority
+						/>
+					</div>
+				</div>
+			</GridContainer>
+		</motion.main>
+	);
 }
