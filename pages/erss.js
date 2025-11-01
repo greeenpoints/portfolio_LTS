@@ -8,7 +8,7 @@ export default function ERSS() {
   return (
     <motion.main className="min-h-[70vh] pt-6 md:pt-8">
       <GridContainer className="gap-y-12">
-        <ProjectTitle role="Academic / Research Project">ERSS</ProjectTitle>
+        <ProjectTitle role="Fellowship Project">ERSS | NG 112</ProjectTitle>
         <div className="col-span-full md:col-span-9 md:col-start-4 space-y-0">
           <div className="space-y-0">
             <Image
