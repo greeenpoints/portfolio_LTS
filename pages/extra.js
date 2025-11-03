@@ -64,6 +64,13 @@ export default function Extra() {
           column: 2,
         },
         {
+          title: 'Playo',
+          description: 'Sports Community Platform',
+          link: '/playo',
+          content: NHAICover,
+          column: 3,
+        },
+        {
           title: 'Interaction Design',
           description: 'Design Systems',
           link: '/dessys',
