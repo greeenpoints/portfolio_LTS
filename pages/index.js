@@ -9,27 +9,48 @@ import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
 import TechniquesCover from '../public/project-covers/techniquesprojectcard.png';
 import VRImage from '../public/project-covers/vrprojectcard.png';
 import DatavisCover from '../public/project-covers/datavisprojectcard.png';
+import PlayoCover from '../public/project-covers/playoprojectcard.png';
 
 const gapValue = 'gap-6';
 
-export default function Home() {
+// File: pages/extra.js
+// Purpose: Render a page that mirrors the homepage but with a 3-column
+// layout specific to the `/extra` route. The page is data-driven: each
+// section in `sections` contains metadata (title + cards) and the
+// rendering logic maps cards into columns based on an optional
+// `column` property on each card.
+//
+// High-level structure:
+// - imports: UI components and static assets
+// - `sections` array: defines section titles and project cards
+// - main JSX: renders an about block, then for each section renders
+//   the section header, a divider, and a grid where cards are
+//   distributed into `totalColumns` columns.
+
+export default function Extra() {
+  // `sections` is an array of objects. Each object represents a group
+  // of project cards rendered under a single header. Cards may include
+  // an optional `column` number (1-based) to request placement in a
+  // specific column. If multiple cards request the same column they
+  // will be stacked; cards without a `column` are distributed
+  // round-robin into the remaining slots.
   const sections = [
     {
   title: 'Service / System Design',
       cards: [
         {
-          title: 'ERSS - 112',
-          description: 'Fellowship Project',
-          link: '/erss',
-          content: ERSSCover,
-          column: 3,
-        },
-        {
           title: 'NHAI',
           description: 'Industry Collaboration Project',
           link: '/nhai',
           content: NHAICover,
-          column: 4,
+          column: 3,
+        },
+        {
+          title: 'ERSS - 112',
+          description: 'Fellowship Project',
+          link: '/erss',
+          content: ERSSCover,
+          column: 2,
         },
       ],
     },
@@ -37,10 +58,17 @@ export default function Home() {
   title: 'VR | UX Research | Design System',
       cards: [
         {
-          title: 'Interaction Design',
-          description: 'Design Systems',
-          link: '/dessys',
-          content: DessysCover,
+          title: 'DARK PATTERNS',
+          description: 'Quantitative Analysis',
+          link: '/darkpatt',
+          content: DarkpattCover,
+          column: 2,
+        },
+        {
+          title: 'Playo',
+          description: 'Sports Community Platform',
+          link: '/playo',
+          content: PlayoCover,
           column: 3,
         },
         {
@@ -48,14 +76,14 @@ export default function Home() {
           description: 'Experiential Explorations',
           link: '/vr',
           content: VRImage,
-          column: 2,
+          column: 3,
         },
         {
-          title: 'DARK PATTERNS',
-          description: 'Quantitative Analysis',
-          link: '/darkpatt',
-          content: DarkpattCover,
-          column: 4,
+          title: 'Interaction Design',
+          description: 'Design Systems',
+          link: '/dessys',
+          content: DessysCover,
+          column: 2,
         },
       ],
     },
@@ -75,7 +103,7 @@ export default function Home() {
           description: 'Methods',
           link: '/techniques',
           content: TechniquesCover,
-          column: 3,
+          column: 2,
         },
       ],
     },
@@ -124,48 +152,79 @@ export default function Home() {
             <section className="grid-layout mt-1 mb-4">
               <div className="col-start-1 col-end-13 h-px bg-white/20" />
             </section>
-            <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-4 grid-gap">
+            {/*
+              Grid rendering and allocation logic:
+              - The wrapper div creates a grid with `md:grid-cols-3`.
+              - We use an IIFE to build `columns`, an array where each
+              element is an array of cards that should appear in that
+              column (allowing stacking multiple cards per column).
+              - Algorithm steps:
+                1. Initialize `columns` as an array of `totalColumns` empty arrays.
+                2. Iterate `section.cards`. If a card has a `column` property
+                   (1-based), clamp it into [0..totalColumns-1] and push
+                   the card into that `columns[columnIndex]` array.
+                3. Collect cards without a `column` into `remainingCards`.
+                4. Distribute `remainingCards` round-robin across columns
+                   (index % totalColumns) so unplaced cards are balanced.
+                5. Map `columns` to JSX: for each column produce a wrapper
+                   div and render all its `ProjectCard` entries stacked.
+              - This approach keeps placement predictable and lets multiple
+                cards share a single column (stacked vertically).
+            */}
+            <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-3 grid-gap">
               {(() => {
-                const totalColumns = 4;
-                const columns = Array.from({ length: totalColumns }, () => null);
+                const totalColumns = 3;
+                // `columns` holds arrays of cards per column (allows stacking)
+                const columns = Array.from({ length: totalColumns }, () => []);
                 const remainingCards = [];
 
+                // First pass: honor explicit `column` requests
                 section.cards.forEach((card) => {
                   if (card.column) {
+                    // Convert 1-based column to 0-based index and clamp
                     const columnIndex = Math.min(
                       totalColumns - 1,
                       Math.max(0, card.column - 1)
                     );
 
-                    if (!columns[columnIndex]) {
-                      columns[columnIndex] = card;
-                      return;
-                    }
+                    columns[columnIndex].push(card);
+                    return;
                   }
 
+                  // Collect cards that didn't request a specific column
                   remainingCards.push(card);
                 });
 
-                for (let i = 0; i < totalColumns; i += 1) {
-                  if (!columns[i] && remainingCards.length) {
-                    columns[i] = remainingCards.shift();
-                  }
-                }
+                // Second pass: distribute remaining cards round-robin
+                remainingCards.forEach((card, index) => {
+                  const columnIndex = index % totalColumns;
+                  columns[columnIndex].push(card);
+                });
 
-                return columns.map((card, columnIndex) => {
+                // Render columns: each column is a vertical stack of ProjectCard
+                return columns.map((columnCards, columnIndex) => {
                   const key = `${section.title}-column-${columnIndex}`;
 
-                  if (!card) {
+                  if (!columnCards.length) {
+                    // Keep grid structure even if a column is empty
                     return (
                       <div key={key} className={`${gapValue} flex flex-col`} />
                     );
                   }
 
-                  const { column, ...cardProps } = card;
-
                   return (
                     <div key={key} className={`${gapValue} flex flex-col`}>
-                      <ProjectCard {...cardProps} />
+                      {columnCards.map((columnCard, cardIndex) => {
+                        // Remove `column` from props before passing to ProjectCard
+                        const { column, ...cardProps } = columnCard;
+                        const cardKey = `${key}-${cardProps.link || cardProps.title || cardIndex}`;
+
+                        return (
+                          <div key={cardKey} className="extra-card-wrapper">
+                            <ProjectCard {...cardProps} />
+                          </div>
+                        );
+                      })}
                     </div>
                   );
                 });
@@ -174,6 +233,31 @@ export default function Home() {
           </React.Fragment>
         ))}
       </GridContainer>
+      <style jsx>{`
+        .extra-card-wrapper {
+          position: relative;
+        }
+
+        .extra-card-wrapper :global(.group) {
+          display: block;
+          padding: 18px;
+          border: 3px solid rgba(255, 255, 255, 0);
+          background-color: #000;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .extra-card-wrapper :global(.group:hover) {
+          border-color: rgba(246, 228, 82, 0.95);
+          box-shadow: 0 0 16px 2px rgba(246, 228, 82, 0.35);
+          transform: translateY(-3px);
+          background-image: none;
+          background-color: #000;
+        }
+
+        .extra-card-wrapper :global(.game-border) {
+          overflow: hidden;
+        }
+      `}</style>
     </main>
   );
 }

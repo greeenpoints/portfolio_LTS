@@ -9,6 +9,7 @@ import DarkpattCover from '../public/project-covers/darkpattprojectcard.png';
 import TechniquesCover from '../public/project-covers/techniquesprojectcard.png';
 import VRImage from '../public/project-covers/vrprojectcard.png';
 import DatavisCover from '../public/project-covers/datavisprojectcard.png';
+import PlayoCover from '../public/project-covers/playoprojectcard.png';
 
 const gapValue = 'gap-6';
 
@@ -57,17 +58,24 @@ export default function Extra() {
   title: 'VR | UX Research | Design System',
       cards: [
         {
-          title: 'VR',
-          description: 'Experiential Explorations',
-          link: '/vr',
-          content: VRImage,
+          title: 'DARK PATTERNS',
+          description: 'Quantitative Analysis',
+          link: '/darkpatt',
+          content: DarkpattCover,
           column: 2,
         },
         {
           title: 'Playo',
           description: 'Sports Community Platform',
           link: '/playo',
-          content: NHAICover,
+          content: PlayoCover,
+          column: 3,
+        },
+        {
+          title: 'VR',
+          description: 'Experiential Explorations',
+          link: '/vr',
+          content: VRImage,
           column: 3,
         },
         {
@@ -76,13 +84,6 @@ export default function Extra() {
           link: '/dessys',
           content: DessysCover,
           column: 2,
-        },
-        {
-          title: 'DARK PATTERNS',
-          description: 'Quantitative Analysis',
-          link: '/darkpatt',
-          content: DarkpattCover,
-          column: 3,
         },
       ],
     },

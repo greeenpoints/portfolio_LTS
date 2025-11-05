@@ -19,6 +19,13 @@ export default function NHAI() {
 							className="block w-full h-auto"
 							priority
 						/>
+						<Image
+							src="/work/nhai/nhai2.svg"
+							alt="National Highways Authority of India design detail"
+							width={1280}
+							height={720}
+							className="block w-full h-auto"
+						/>
 					</div>
 				</div>
 			</GridContainer>
